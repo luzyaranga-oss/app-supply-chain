@@ -1,0 +1,15 @@
+CONTENIDO
+modelo/   7 modelos ya entrenados (Pipeline = preprocesamiento + modelo), formato joblib.
+          El modelo FINAL del proyecto es adaboost_arbol_FINAL.joblib
+datos/    info_variables.json (columnas, categorias, rangos), metricas_test_modelos.csv,
+          muestra_pedidos_test.csv (300 pedidos reales del test con su resultado real)
+reentrenar/  script por si tu version de scikit-learn no abre los .joblib (necesita data.csv)
+
+COMO CARGARLOS:  import joblib; m = joblib.load("modelo/adaboost_arbol_FINAL.joblib"); m.predict_proba(df)[:,1]
+El DataFrame debe tener las 20 columnas de datos/info_variables.json con los mismos nombres.
+
+IMPORTANTE: entrenados con scikit-learn 1.9.1 (Python 3.13). Instala esa misma version:
+pip install -r requirements.txt   Si da error al cargar, usa reentrenar/reentrenar_modelos.py
+(tarda ~6 min; uso:  python reentrenar_modelos.py adaboost_arbol_FINAL random_forest ...)
+NOTA: metricas de test levemente distintas a las de tu Colab (ej. AdaBoost final: accuracy .6698 / ROC-AUC .7434 aqui vs .6714 / .7416 en Colab).
+Ver metricas_test_modelos.csv. No incluye Voting ni los AdaBoost/Bagging de los otros 3 algoritmos.

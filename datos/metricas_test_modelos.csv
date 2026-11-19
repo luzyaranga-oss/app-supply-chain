@@ -1,0 +1,8 @@
+modelo,accuracy,precision,recall,f1,roc_auc,segundos
+random_forest,0.7066,0.8457,0.5688,0.6801,0.7835,31
+bagging_arbol,0.7085,0.8487,0.5699,0.6819,0.7753,48
+gradient_boosting,0.7029,0.8372,0.5688,0.6774,0.7611,159
+arbol_decision,0.702,0.8267,0.5776,0.6801,0.7507,2
+adaboost_arbol_FINAL,0.6698,0.7079,0.6771,0.6922,0.7434,80
+regresion_logistica,0.6956,0.8234,0.5663,0.671,0.7418,2
+svm_muestra15000,0.6965,0.8373,0.5543,0.667,0.7364,163

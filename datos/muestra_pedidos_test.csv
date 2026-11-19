@@ -1,0 +1,301 @@
+Type,Days for shipment (scheduled),Category Name,Customer Country,Customer Segment,Customer State,Department Name,Market,Order Country,Order Item Discount,Order Item Discount Rate,Order Item Profit Ratio,Order Item Quantity,Order Profit Per Order,Order Region,Product Price,Shipping Mode,order_year,order_month,order_dayofweek,Late_delivery_risk_real
+TRANSFER,4,Water Sports,Puerto Rico,Corporate,PR,Fan Shop,Europe,Italia,2.0,0.01,0.129999995,1,24.75,Southern Europe,199.9900055,Standard Class,2017,7,5,1
+DEBIT,2,Women's Apparel,EE. UU.,Consumer,CA,Golf,Pacific Asia,Turquía,25.5,0.170000002,0.479999989,3,59.75999832,West Asia,50.0,Second Class,2016,10,4,1
+PAYMENT,1,Women's Apparel,Puerto Rico,Consumer,PR,Golf,LATAM,México,26.0,0.129999995,0.349999994,4,60.90000153,Central America,50.0,First Class,2017,5,1,1
+DEBIT,0,Indoor/Outdoor Games,EE. UU.,Home Office,MI,Fan Shop,Europe,Alemania,7.5,0.050000001,0.340000004,3,48.15000153,Western Europe,49.97999954,Same Day,2017,7,5,1
+TRANSFER,4,Cleats,EE. UU.,Consumer,PA,Apparel,LATAM,México,21.60000038,0.090000004,-0.180000007,4,-38.20999908,Central America,59.99000168,Standard Class,2017,5,3,1
+TRANSFER,4,Indoor/Outdoor Games,Puerto Rico,Home Office,PR,Fan Shop,Pacific Asia,India,12.5,0.050000001,0.479999989,5,113.9499969,South Asia,49.97999954,Standard Class,2015,10,0,0
+DEBIT,4,Cleats,EE. UU.,Consumer,OH,Apparel,Europe,Italia,38.99000168,0.129999995,0.379999995,5,99.16000366,Southern Europe,59.99000168,Standard Class,2015,8,6,0
+TRANSFER,4,Shop By Sport,EE. UU.,Home Office,CA,Golf,LATAM,México,11.19999981,0.07,0.5,4,74.37999725,Central America,39.99000168,Standard Class,2017,2,5,1
+DEBIT,1,Sporting Goods,EE. UU.,Consumer,MI,Fitness,Pacific Asia,China,3.279999971,0.01,-0.300000012,1,-79.70000457500001,Eastern Asia,327.75,First Class,2018,1,5,1
+PAYMENT,4,Cleats,EE. UU.,Corporate,CA,Apparel,Europe,Reino Unido,4.199999809,0.07,0.340000004,1,18.86000061,Northern Europe,59.99000168,Standard Class,2015,9,1,0
+DEBIT,2,Electronics,Puerto Rico,Consumer,PR,Outdoors,USCA,Estados Unidos,13.0,0.25,0.360000014,1,14.14999962,US Center ,51.99000168,Second Class,2016,5,1,1
+TRANSFER,4,Water Sports,EE. UU.,Consumer,CA,Fan Shop,USCA,Estados Unidos,14.0,0.07,0.379999995,1,69.75,East of USA,199.9900055,Standard Class,2016,6,0,0
+PAYMENT,1,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,LATAM,El Salvador,36.0,0.180000007,0.460000008,1,75.44000244,Central America,199.9900055,First Class,2017,3,5,1
+DEBIT,1,Fishing,Puerto Rico,Consumer,PR,Fan Shop,Africa,Marruecos,52.0,0.129999995,0.460000008,1,151.50000762500002,North Africa,399.980011,First Class,2016,9,4,1
+TRANSFER,4,Men's Footwear,EE. UU.,Corporate,OH,Apparel,LATAM,México,20.79999924,0.159999996,0.5,1,54.59999847,Central America,129.9900055,Standard Class,2017,6,4,0
+CASH,4,Men's Golf Clubs,EE. UU.,Home Office,GA,Outdoors,LATAM,Cuba,20.79999924,0.159999996,0.029999999,1,3.279999971,Caribbean,129.9900055,Standard Class,2017,5,5,0
+CASH,4,Cleats,EE. UU.,Home Office,MO,Apparel,Europe,Reino Unido,9.0,0.029999999,0.270000011,5,78.55999756,Northern Europe,59.99000168,Standard Class,2017,7,1,1
+TRANSFER,2,Women's Apparel,Puerto Rico,Corporate,PR,Golf,LATAM,Nicaragua,37.5,0.150000006,0.469999999,5,99.87999725,Central America,50.0,Second Class,2017,2,0,1
+DEBIT,2,Water Sports,EE. UU.,Consumer,PA,Fan Shop,Pacific Asia,China,32.0,0.159999996,0.170000002,1,28.55999947,Eastern Asia,199.9900055,Second Class,2015,11,6,1
+TRANSFER,1,Water Sports,EE. UU.,Consumer,PA,Fan Shop,Africa,Angola,2.0,0.01,-0.3400000259999999,1,-79.70000457500001,Central Africa,199.9900055,First Class,2016,11,4,1
+CASH,4,Water Sports,EE. UU.,Corporate,CA,Fan Shop,LATAM,México,26.0,0.129999995,0.479999989,1,83.51999664,Central America,199.9900055,Standard Class,2017,6,0,0
+TRANSFER,4,Shop By Sport,EE. UU.,Corporate,MI,Golf,Pacific Asia,Australia,1.200000048,0.01,0.01,3,1.190000057,Oceania,39.99000168,Standard Class,2016,2,1,0
+TRANSFER,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Europe,Italia,31.98999977,0.159999996,0.349999994,4,58.77999878,Southern Europe,49.97999954,Standard Class,2017,8,6,0
+DEBIT,2,Water Sports,Puerto Rico,Corporate,PR,Fan Shop,Europe,Francia,8.0,0.039999999,0.300000012,1,57.59999847,Western Europe,199.9900055,Second Class,2015,7,3,0
+DEBIT,4,Camping & Hiking,EE. UU.,Consumer,CA,Fan Shop,Pacific Asia,Corea del Sur,15.0,0.050000001,0.430000007,1,122.5400009,Eastern Asia,299.980011,Standard Class,2015,11,5,0
+PAYMENT,4,Fishing,EE. UU.,Corporate,NY,Fan Shop,Europe,España,66.8749992825,0.170000002,0.340000004,1,112.2099991,Southern Europe,399.980011,Standard Class,2015,6,1,0
+DEBIT,4,Cleats,EE. UU.,Corporate,CT,Apparel,Europe,Francia,44.99000168,0.150000006,0.449999988,5,114.7300034,Western Europe,59.99000168,Standard Class,2015,7,6,0
+DEBIT,4,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,Europe,Bélgica,3.900000095,0.029999999,-0.140000001,1,-17.39999962,Western Europe,129.9900055,Standard Class,2017,8,3,0
+PAYMENT,4,Men's Footwear,EE. UU.,Consumer,NJ,Apparel,Europe,Francia,23.39999962,0.180000007,-0.25,1,-26.64999962,Western Europe,129.9900055,Standard Class,2015,10,3,0
+DEBIT,4,Golf Shoes,EE. UU.,Consumer,CA,Outdoors,Europe,Suecia,5.400000095,0.050000001,-0.189999998,1,-19.07999992,Northern Europe,108.0,Standard Class,2017,7,3,1
+DEBIT,1,Women's Apparel,EE. UU.,Consumer,MD,Golf,Europe,Francia,1.5,0.01,0.140000001,3,20.79000092,Western Europe,50.0,First Class,2017,9,5,1
+DEBIT,2,Indoor/Outdoor Games,Puerto Rico,Home Office,PR,Fan Shop,LATAM,Cuba,1.0,0.02,0.25999999,1,12.72999954,Caribbean,49.97999954,Second Class,2015,3,4,0
+DEBIT,4,Electronics,EE. UU.,Consumer,CA,Footwear,Pacific Asia,Tayikistán,2.880000114,0.029999999,0.280000001,3,26.0699997,Central Asia,31.98999977,Standard Class,2016,9,4,0
+TRANSFER,4,Men's Footwear,EE. UU.,Corporate,CA,Apparel,Europe,Rusia,2.599999905,0.02,0.49000001,1,62.41999817,Eastern Europe,129.9900055,Standard Class,2016,11,3,0
+TRANSFER,2,Men's Footwear,EE. UU.,Corporate,MN,Apparel,LATAM,Nicaragua,6.5,0.050000001,0.239999995,1,29.38999939,Central America,129.9900055,Second Class,2015,5,3,1
+PAYMENT,4,Water Sports,EE. UU.,Home Office,MI,Fan Shop,USCA,Estados Unidos,34.0,0.170000002,0.419999987,1,69.72000122,West of USA ,199.9900055,Standard Class,2016,4,1,0
+PAYMENT,4,Toys,EE. UU.,Consumer,CA,Fan Shop,Pacific Asia,Bangladés,1.039999962,0.090000004,-0.319999993,1,-3.329999924,South Asia,11.53999996,Standard Class,2017,12,3,1
+TRANSFER,4,Cleats,Puerto Rico,Consumer,PR,Apparel,Pacific Asia,India,0.600000024,0.01,-0.3400000259999999,1,-47.50999832,South Asia,59.99000168,Standard Class,2015,11,4,1
+DEBIT,4,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Brasil,8.0,0.039999999,-0.3400000259999999,1,-73.52999878,South America,199.9900055,Standard Class,2015,3,1,0
+TRANSFER,1,Fishing,EE. UU.,Consumer,VA,Fan Shop,Europe,Países Bajos,8.0,0.02,0.419999987,1,151.50000762500002,Western Europe,399.980011,First Class,2017,8,2,1
+TRANSFER,2,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Pacific Asia,Camboya,49.97999954,0.25,0.379999995,4,56.22999954,Southeast Asia,49.97999954,Second Class,2016,2,4,0
+PAYMENT,4,Indoor/Outdoor Games,EE. UU.,Corporate,CA,Fan Shop,Europe,Polonia,24.98999977,0.100000001,-0.3400000259999999,5,-79.70000457500001,Eastern Europe,49.97999954,Standard Class,2017,1,5,1
+DEBIT,2,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,USCA,Estados Unidos,10.0,0.050000001,0.330000013,1,61.75,US Center ,199.9900055,Second Class,2016,8,4,1
+TRANSFER,1,Water Sports,EE. UU.,Consumer,CA,Fan Shop,Europe,Reino Unido,40.0,0.200000003,0.050000001,1,8.0,Northern Europe,199.9900055,First Class,2017,9,0,1
+TRANSFER,4,Women's Apparel,Puerto Rico,Consumer,PR,Golf,USCA,Estados Unidos,5.5,0.059999999,0.090000004,2,8.319999695,West of USA ,50.0,Standard Class,2016,5,3,0
+DEBIT,4,Men's Footwear,EE. UU.,Consumer,CO,Apparel,Europe,Rusia,16.89999962,0.129999995,0.5,1,56.54999924,Eastern Europe,129.9900055,Standard Class,2016,11,2,1
+CASH,4,Computers,EE. UU.,Corporate,MI,Technology,Europe,Reino Unido,60.0,0.039999999,0.289999992,1,151.50000762500002,Northern Europe,424.97501375,Standard Class,2017,10,4,0
+DEBIT,0,Camping & Hiking,Puerto Rico,Consumer,PR,Fan Shop,Europe,Países Bajos,3.0,0.01,0.189999998,1,56.43000031,Western Europe,299.980011,Same Day,2015,9,0,0
+DEBIT,4,Indoor/Outdoor Games,EE. UU.,Corporate,CA,Fan Shop,Europe,Alemania,35.99000168,0.180000007,-0.3400000259999999,4,-79.70000457500001,Western Europe,49.97999954,Standard Class,2015,9,3,0
+DEBIT,1,Shop By Sport,Puerto Rico,Corporate,PR,Golf,Pacific Asia,Filipinas,11.19999981,0.07,0.479999989,4,71.41000366,Southeast Asia,39.99000168,First Class,2015,11,5,1
+TRANSFER,4,Cleats,EE. UU.,Consumer,CT,Apparel,Pacific Asia,Indonesia,12.60000038,0.07,0.189999998,3,31.46999931,Southeast Asia,59.99000168,Standard Class,2016,3,2,0
+PAYMENT,4,Camping & Hiking,EE. UU.,Consumer,AZ,Fan Shop,USCA,Estados Unidos,30.0,0.100000001,0.460000008,1,124.1900024,East of USA,299.980011,Standard Class,2016,8,1,0
+PAYMENT,1,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Europe,Italia,19.98999977,0.100000001,0.090000004,4,15.82999992,Southern Europe,49.97999954,First Class,2015,10,1,1
+CASH,4,Men's Footwear,EE. UU.,Home Office,TN,Apparel,LATAM,Colombia,9.100000381,0.07,-0.01,1,-1.690000057,South America,129.9900055,Standard Class,2017,5,2,0
+TRANSFER,4,Camping & Hiking,EE. UU.,Corporate,AZ,Fan Shop,LATAM,Brasil,60.0,0.200000003,0.330000013,1,77.98999786,South America,299.980011,Standard Class,2015,3,6,0
+CASH,0,Cleats,EE. UU.,Home Office,PA,Apparel,Africa,Camerún,9.899999619,0.059999999,0.449999988,3,76.52999878,Central Africa,59.99000168,Same Day,2016,10,5,0
+DEBIT,4,Cleats,EE. UU.,Corporate,AZ,Apparel,LATAM,Colombia,9.0,0.050000001,-0.3400000259999999,3,-79.70000457500001,South America,59.99000168,Standard Class,2015,1,0,0
+DEBIT,4,Camping & Hiking,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Colombia,12.0,0.039999999,0.059999999,1,18.13999939,South America,299.980011,Standard Class,2015,4,4,0
+PAYMENT,1,Cleats,EE. UU.,Consumer,IL,Apparel,LATAM,República Dominicana,1.200000048,0.02,0.100000001,1,5.880000114,Caribbean,59.99000168,First Class,2017,3,2,1
+DEBIT,4,Women's Apparel,EE. UU.,Consumer,NM,Golf,Europe,Austria,26.0,0.129999995,0.100000001,4,17.39999962,Western Europe,50.0,Standard Class,2015,9,3,0
+PAYMENT,2,Water Sports,EE. UU.,Corporate,IL,Fan Shop,Pacific Asia,Indonesia,8.0,0.039999999,-0.050000001,1,-9.020000458,Southeast Asia,199.9900055,Second Class,2016,1,2,0
+PAYMENT,2,Shop By Sport,EE. UU.,Consumer,TX,Golf,Pacific Asia,Turquía,8.800000191,0.059999999,0.439999998,4,66.51000214,West Asia,39.99000168,Second Class,2016,12,6,1
+DEBIT,1,Men's Footwear,EE. UU.,Home Office,NY,Apparel,Pacific Asia,India,11.69999981,0.090000004,-0.129999995,1,-15.26000023,South Asia,129.9900055,First Class,2016,2,0,1
+DEBIT,4,Accessories,EE. UU.,Consumer,NY,Outdoors,USCA,Estados Unidos,0.75,0.029999999,0.330000013,1,8.0,US Center ,24.98999977,Standard Class,2016,5,4,0
+TRANSFER,4,Cleats,Puerto Rico,Home Office,PR,Apparel,Europe,Ucrania,6.0,0.100000001,0.469999999,1,25.37999916,Eastern Europe,59.99000168,Standard Class,2016,9,3,0
+TRANSFER,0,Cleats,Puerto Rico,Consumer,PR,Apparel,Europe,Francia,31.19000053,0.129999995,0.379999995,4,78.29000092,Western Europe,59.99000168,Same Day,2017,6,1,0
+DEBIT,0,Accessories,EE. UU.,Consumer,FL,Outdoors,LATAM,Guatemala,21.23999977,0.170000002,0.340000004,5,35.04999924,Central America,24.98999977,Same Day,2015,5,2,0
+TRANSFER,2,Water Sports,EE. UU.,Consumer,CA,Fan Shop,Pacific Asia,India,14.0,0.07,0.479999989,1,89.27999878,South Asia,199.9900055,Second Class,2016,1,5,1
+DEBIT,4,Women's Apparel,EE. UU.,Home Office,OH,Golf,LATAM,Brasil,24.0,0.159999996,0.330000013,3,40.95000076,South America,50.0,Standard Class,2017,2,0,0
+DEBIT,2,Indoor/Outdoor Games,EE. UU.,Consumer,CA,Fan Shop,Africa,Nigeria,37.49000168,0.150000006,0.100000001,5,21.23999977,West Africa,49.97999954,Second Class,2016,9,6,0
+DEBIT,2,Fishing,EE. UU.,Corporate,TX,Fan Shop,Africa,Zimbabue,20.0,0.050000001,0.479999989,1,151.50000762500002,East Africa,399.980011,Second Class,2016,10,0,1
+DEBIT,4,Cardio Equipment,Puerto Rico,Consumer,PR,Footwear,Europe,Francia,0.0,0.0,-0.3400000259999999,4,-79.70000457500001,Western Europe,99.98999786,Standard Class,2017,7,3,0
+DEBIT,4,Women's Apparel,EE. UU.,Consumer,PA,Golf,LATAM,Trinidad y Tobago,18.0,0.090000004,0.479999989,4,87.36000061,Caribbean,50.0,Standard Class,2017,2,1,0
+DEBIT,4,Cleats,EE. UU.,Corporate,TX,Apparel,Pacific Asia,Pakistán,27.0,0.150000006,0.479999989,3,73.43000031,South Asia,59.99000168,Standard Class,2016,2,2,1
+PAYMENT,2,Indoor/Outdoor Games,Puerto Rico,Corporate,PR,Fan Shop,Pacific Asia,Indonesia,4.5,0.090000004,0.340000004,1,15.36999989,Southeast Asia,49.97999954,Second Class,2016,3,0,1
+TRANSFER,4,Women's Apparel,Puerto Rico,Corporate,PR,Golf,Pacific Asia,Australia,26.0,0.129999995,0.460000008,4,80.04000092,Oceania,50.0,Standard Class,2016,1,6,1
+TRANSFER,4,Fishing,EE. UU.,Consumer,IL,Fan Shop,LATAM,Brasil,4.0,0.01,0.379999995,1,148.4900055,South America,399.980011,Standard Class,2015,5,0,0
+DEBIT,4,Books ,EE. UU.,Consumer,CA,Book Shop,Pacific Asia,Malasia,2.799999952,0.090000004,0.189999998,1,5.369999886,Southeast Asia,31.07999992,Standard Class,2017,12,5,0
+DEBIT,4,Camping & Hiking,Puerto Rico,Consumer,PR,Fan Shop,Pacific Asia,Nueva Zelanda,9.0,0.029999999,0.349999994,1,101.8399963,Oceania,299.980011,Standard Class,2016,3,3,0
+DEBIT,4,Fishing,EE. UU.,Consumer,CA,Fan Shop,LATAM,Guatemala,66.8749992825,0.25,0.25,1,75.0,Central America,399.980011,Standard Class,2017,4,5,0
+TRANSFER,1,Shop By Sport,EE. UU.,Consumer,MO,Golf,Pacific Asia,Turquía,20.0,0.100000001,0.449999988,5,80.98000336,West Asia,39.99000168,First Class,2017,1,5,1
+DEBIT,2,Women's Apparel,EE. UU.,Consumer,CA,Golf,LATAM,El Salvador,8.0,0.159999996,-0.3400000259999999,1,-18.89999962,Central America,50.0,Second Class,2017,4,6,1
+PAYMENT,2,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,USCA,Estados Unidos,6.5,0.050000001,0.25999999,1,32.11000061,West of USA ,129.9900055,Second Class,2016,6,1,1
+TRANSFER,1,Men's Footwear,EE. UU.,Home Office,TX,Apparel,LATAM,Nicaragua,1.299999952,0.01,0.460000008,1,59.20000076,Central America,129.9900055,First Class,2015,5,6,1
+PAYMENT,2,Cleats,EE. UU.,Consumer,MN,Apparel,Africa,Argelia,7.800000191,0.129999995,0.479999989,1,25.04999924,North Africa,59.99000168,Second Class,2016,12,4,1
+TRANSFER,4,Shop By Sport,Puerto Rico,Corporate,PR,Golf,LATAM,Honduras,8.0,0.100000001,0.330000013,2,23.38999939,Central America,39.99000168,Standard Class,2015,3,1,0
+DEBIT,4,Shop By Sport,EE. UU.,Home Office,NC,Golf,LATAM,México,0.0,0.0,0.479999989,5,95.98000336,Central America,39.99000168,Standard Class,2015,2,1,0
+DEBIT,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,USCA,Estados Unidos,19.98999977,0.200000003,-0.239999995,2,-19.03000069,West of USA ,49.97999954,Standard Class,2016,4,2,1
+CASH,4,Shop By Sport,EE. UU.,Corporate,CA,Golf,Africa,República Democrática del Congo,23.98999977,0.200000003,0.340000004,3,32.63000107,Central Africa,39.99000168,Standard Class,2016,8,0,1
+TRANSFER,4,Camping & Hiking,Puerto Rico,Home Office,PR,Fan Shop,LATAM,Guatemala,21.0,0.07,0.439999998,1,122.75,Central America,299.980011,Standard Class,2017,6,5,1
+DEBIT,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Argentina,23.98999977,0.159999996,0.100000001,3,12.59000015,South America,49.97999954,Standard Class,2017,5,4,1
+DEBIT,2,Cleats,Puerto Rico,Consumer,PR,Apparel,LATAM,México,10.80000019,0.090000004,0.140000001,2,15.28999996,Central America,59.99000168,Second Class,2017,4,5,1
+PAYMENT,1,Men's Footwear,EE. UU.,Home Office,CA,Apparel,Pacific Asia,Myanmar (Birmania),26.0,0.200000003,0.479999989,1,49.91999817,Southeast Asia,129.9900055,First Class,2015,12,1,1
+TRANSFER,1,Men's Footwear,EE. UU.,Corporate,MI,Apparel,Europe,Reino Unido,2.599999905,0.02,0.200000003,1,25.47999954,Northern Europe,129.9900055,First Class,2015,8,2,1
+PAYMENT,2,Cardio Equipment,EE. UU.,Consumer,CO,Footwear,USCA,Estados Unidos,34.0,0.170000002,0.25999999,2,43.15999985,West of USA ,99.98999786,Second Class,2016,6,5,1
+CASH,1,Water Sports,EE. UU.,Consumer,IL,Fan Shop,LATAM,Cuba,50.0,0.25,0.140000001,1,21.0,Caribbean,199.9900055,First Class,2017,2,6,1
+DEBIT,1,Men's Footwear,EE. UU.,Home Office,CA,Apparel,USCA,Canada,26.0,0.200000003,-0.150000006,1,-15.60000038,Canada,129.9900055,First Class,2016,10,1,1
+CASH,1,Women's Apparel,EE. UU.,Consumer,CA,Golf,Pacific Asia,Australia,18.0,0.090000004,0.310000002,4,56.41999817,Oceania,50.0,First Class,2015,11,5,1
+DEBIT,1,Cleats,EE. UU.,Consumer,KY,Apparel,Pacific Asia,Turquía,30.0,0.100000001,-0.3400000259999999,5,-79.70000457500001,West Asia,59.99000168,First Class,2016,10,2,1
+CASH,4,Men's Footwear,EE. UU.,Consumer,NY,Apparel,LATAM,República Dominicana,6.5,0.050000001,0.469999999,1,58.04000092,Caribbean,129.9900055,Standard Class,2017,2,0,1
+TRANSFER,4,Cardio Equipment,EE. UU.,Home Office,MO,Footwear,Pacific Asia,Vietnam,59.99000168,0.200000003,0.360000014,3,86.38999939,Southeast Asia,99.98999786,Standard Class,2016,1,5,0
+CASH,1,Cameras ,EE. UU.,Corporate,TX,Technology,Europe,Alemania,58.77000046,0.129999995,0.479999989,1,151.50000762500002,Western Europe,424.97501375,First Class,2017,10,6,1
+PAYMENT,0,Indoor/Outdoor Games,EE. UU.,Corporate,NY,Fan Shop,Europe,Alemania,49.97999954,0.200000003,0.340000004,5,67.97000122,Western Europe,49.97999954,Same Day,2017,7,5,1
+TRANSFER,4,Women's Apparel,EE. UU.,Consumer,VA,Golf,LATAM,República Dominicana,32.5,0.129999995,0.300000012,5,65.25,Caribbean,50.0,Standard Class,2015,5,3,1
+TRANSFER,4,Soccer,Puerto Rico,Consumer,PR,Fitness,LATAM,México,12.0,0.050000001,0.439999998,3,100.3099976,Central America,79.98999786,Standard Class,2017,4,5,0
+TRANSFER,1,Indoor/Outdoor Games,EE. UU.,Consumer,GA,Fan Shop,Pacific Asia,Irán,5.5,0.059999999,0.469999999,2,44.40000153,South Asia,49.97999954,First Class,2016,9,4,1
+CASH,1,Cleats,Puerto Rico,Consumer,PR,Apparel,LATAM,México,47.99000168,0.200000003,0.090000004,4,16.70000076,Central America,59.99000168,First Class,2015,1,1,1
+TRANSFER,2,Video Games,EE. UU.,Consumer,UT,Discs Shop,Pacific Asia,Bangladés,0.400000006,0.01,0.360000014,1,14.17000008,South Asia,39.75,Second Class,2018,1,0,1
+TRANSFER,2,Cleats,Puerto Rico,Corporate,PR,Apparel,LATAM,Nicaragua,21.60000038,0.119999997,0.479999989,3,76.01999664,Central America,59.99000168,Second Class,2015,4,3,0
+DEBIT,4,Indoor/Outdoor Games,EE. UU.,Consumer,DC,Fan Shop,Pacific Asia,Filipinas,24.98999977,0.25,0.289999992,2,21.73999977,Southeast Asia,49.97999954,Standard Class,2016,2,3,0
+TRANSFER,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Pacific Asia,Indonesia,13.48999977,0.090000004,0.379999995,3,51.16999817,Southeast Asia,49.97999954,Standard Class,2016,3,4,0
+PAYMENT,0,Cardio Equipment,EE. UU.,Corporate,MI,Footwear,LATAM,México,5.0,0.050000001,0.07,1,6.650000095,Central America,99.98999786,Same Day,2015,2,5,1
+DEBIT,4,Men's Footwear,Puerto Rico,Corporate,PR,Apparel,USCA,Estados Unidos,6.5,0.050000001,0.079999998,1,10.13000011,East of USA,129.9900055,Standard Class,2016,8,2,0
+TRANSFER,4,Men's Footwear,EE. UU.,Corporate,WA,Apparel,Pacific Asia,Australia,7.150000095,0.059999999,0.25,1,30.70999908,Oceania,129.9900055,Standard Class,2015,10,5,0
+PAYMENT,4,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Nicaragua,30.0,0.150000006,0.49000001,1,83.30000305,Central America,199.9900055,Standard Class,2015,3,5,1
+DEBIT,4,Electronics,Puerto Rico,Consumer,PR,Outdoors,Pacific Asia,Australia,5.440000057,0.170000002,-0.109999999,1,-3.0,Oceania,31.98999977,Standard Class,2016,2,3,0
+DEBIT,4,Water Sports,EE. UU.,Corporate,CA,Fan Shop,Pacific Asia,Australia,8.0,0.039999999,0.090000004,1,16.89999962,Oceania,199.9900055,Standard Class,2016,2,6,0
+PAYMENT,4,Camping & Hiking,EE. UU.,Home Office,OH,Fan Shop,Pacific Asia,Nueva Zelanda,6.0,0.02,0.349999994,1,102.8899994,Oceania,299.980011,Standard Class,2016,3,6,0
+TRANSFER,4,Women's Apparel,EE. UU.,Consumer,TX,Golf,Europe,Reino Unido,30.0,0.150000006,0.340000004,4,57.45999908,Northern Europe,50.0,Standard Class,2015,9,3,0
+CASH,2,Cardio Equipment,EE. UU.,Consumer,TX,Footwear,LATAM,Honduras,0.0,0.0,0.25999999,4,103.9899979,Central America,99.98999786,Second Class,2015,4,4,1
+DEBIT,4,Indoor/Outdoor Games,EE. UU.,Consumer,AZ,Fan Shop,Pacific Asia,Uzbekistán,1.5,0.01,-0.129999995,3,-19.14999962,Central Asia,49.97999954,Standard Class,2016,11,3,1
+PAYMENT,4,Camping & Hiking,EE. UU.,Home Office,CA,Fan Shop,Pacific Asia,Corea del Sur,15.0,0.050000001,0.460000008,1,131.0899963,Eastern Asia,299.980011,Standard Class,2016,2,6,0
+TRANSFER,0,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,LATAM,México,0.0,0.0,0.100000001,1,20.0,Central America,199.9900055,Same Day,2015,4,1,0
+DEBIT,4,Fishing,Puerto Rico,Consumer,PR,Fan Shop,USCA,Estados Unidos,48.0,0.119999997,-0.129999995,1,-44.0,South of  USA ,399.980011,Standard Class,2016,4,2,1
+PAYMENT,4,Golf Balls,EE. UU.,Consumer,CA,Outdoors,Africa,Marruecos,14.98999977,0.25,0.360000014,3,16.32999992,North Africa,19.98999977,Standard Class,2016,10,4,0
+PAYMENT,4,Electronics,EE. UU.,Corporate,CA,Outdoors,Pacific Asia,India,0.0,0.0,0.330000013,1,10.56000042,South Asia,31.98999977,Standard Class,2016,2,5,1
+PAYMENT,4,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,USCA,Estados Unidos,16.89999962,0.129999995,0.109999999,1,12.77999973,South of  USA ,129.9900055,Standard Class,2016,6,4,1
+PAYMENT,4,Fishing,EE. UU.,Consumer,NC,Fan Shop,Europe,Países Bajos,64.0,0.159999996,0.389999986,1,131.0299988,Western Europe,399.980011,Standard Class,2015,8,3,0
+PAYMENT,1,Indoor/Outdoor Games,EE. UU.,Consumer,TX,Fan Shop,USCA,Estados Unidos,12.0,0.119999997,0.25999999,2,22.87000084,East of USA,49.97999954,First Class,2016,4,0,1
+TRANSFER,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Europe,Francia,3.0,0.029999999,0.270000011,2,26.18000031,Western Europe,49.97999954,Standard Class,2017,7,1,1
+TRANSFER,4,Cardio Equipment,EE. UU.,Consumer,OR,Footwear,LATAM,Nicaragua,48.0,0.159999996,0.129999995,3,31.5,Central America,99.98999786,Standard Class,2017,5,5,0
+PAYMENT,4,Shop By Sport,Puerto Rico,Consumer,PR,Golf,USCA,Estados Unidos,5.599999905,0.07,0.460000008,2,34.22000122,US Center ,39.99000168,Standard Class,2016,7,4,1
+TRANSFER,4,Shop By Sport,Puerto Rico,Consumer,PR,Golf,Pacific Asia,Indonesia,0.0,0.0,0.449999988,4,71.98000336,Southeast Asia,39.99000168,Standard Class,2015,12,6,1
+PAYMENT,1,Cardio Equipment,EE. UU.,Corporate,AZ,Footwear,LATAM,El Salvador,39.0,0.129999995,-0.3400000259999999,3,-79.70000457500001,Central America,99.98999786,First Class,2015,1,3,1
+DEBIT,2,Girls' Apparel,Puerto Rico,Consumer,PR,Golf,Europe,Irlanda,23.79999924,0.170000002,0.349999994,2,40.66999817,Northern Europe,70.0,Second Class,2015,7,5,1
+TRANSFER,4,DVDs,EE. UU.,Home Office,NV,Discs Shop,Pacific Asia,Malasia,11.51000023,0.07,0.469999999,1,71.84999847,Southeast Asia,164.3800049,Standard Class,2017,12,6,0
+TRANSFER,2,Indoor/Outdoor Games,EE. UU.,Corporate,CA,Fan Shop,Europe,Rusia,23.98999977,0.119999997,0.01,4,1.75999999,Eastern Europe,49.97999954,Second Class,2017,1,2,1
+DEBIT,2,Fitness Accessories,EE. UU.,Consumer,FL,Footwear,LATAM,México,11.19999981,0.159999996,0.5,2,29.38999939,Central America,34.99000168,Second Class,2015,4,1,1
+CASH,4,Women's Apparel,EE. UU.,Consumer,CO,Golf,LATAM,Nicaragua,6.0,0.039999999,0.280000001,3,40.3199997,Central America,50.0,Standard Class,2015,4,5,0
+PAYMENT,4,Cleats,EE. UU.,Corporate,MA,Apparel,USCA,Canada,2.400000095,0.02,0.360000014,2,42.68000031,Canada,59.99000168,Standard Class,2017,1,0,0
+DEBIT,2,Camping & Hiking,Puerto Rico,Home Office,PR,Fan Shop,LATAM,México,48.0,0.159999996,0.330000013,1,83.15000153,Central America,299.980011,Second Class,2017,3,5,0
+DEBIT,2,Indoor/Outdoor Games,EE. UU.,Corporate,CO,Fan Shop,Pacific Asia,Irak,14.98999977,0.100000001,0.109999999,3,15.25,West Asia,49.97999954,Second Class,2016,9,4,0
+PAYMENT,1,Cardio Equipment,EE. UU.,Consumer,OH,Footwear,Europe,Rusia,11.0,0.059999999,-0.3400000259999999,2,-79.70000457500001,Eastern Europe,99.98999786,First Class,2017,1,5,1
+CASH,4,Indoor/Outdoor Games,EE. UU.,Home Office,MI,Fan Shop,Pacific Asia,Filipinas,1.0,0.02,-0.050000001,1,-2.450000048,Southeast Asia,49.97999954,Standard Class,2016,1,3,0
+CASH,4,DVDs,EE. UU.,Corporate,CA,Discs Shop,Pacific Asia,Australia,0.0,0.0,0.360000014,1,59.66999817,Oceania,164.3800049,Standard Class,2017,11,5,0
+DEBIT,4,Shop By Sport,EE. UU.,Corporate,IL,Golf,LATAM,Argentina,2.799999952,0.07,0.280000001,1,10.40999985,South America,39.99000168,Standard Class,2015,2,1,0
+PAYMENT,2,Water Sports,EE. UU.,Home Office,GA,Fan Shop,LATAM,Colombia,10.0,0.050000001,0.100000001,1,19.0,South America,199.9900055,Second Class,2015,5,0,1
+PAYMENT,0,Golf Balls,Puerto Rico,Consumer,PR,Outdoors,Pacific Asia,Turquía,7.199999809,0.119999997,0.300000012,4,15.82999992,West Asia,14.98999977,Same Day,2017,1,2,0
+TRANSFER,4,Children's Clothing,EE. UU.,Home Office,FL,Apparel,Europe,Países Bajos,0.0,0.0,0.050000001,1,17.86000061,Western Europe,357.1000061,Standard Class,2017,10,6,0
+TRANSFER,1,Water Sports,EE. UU.,Home Office,MI,Fan Shop,USCA,Estados Unidos,34.0,0.170000002,0.230000004,1,38.18000031,South of  USA ,199.9900055,First Class,2016,8,0,1
+CASH,2,Camping & Hiking,EE. UU.,Corporate,MI,Fan Shop,LATAM,Nicaragua,30.0,0.100000001,0.360000014,1,98.0,Central America,299.980011,Second Class,2015,2,2,0
+TRANSFER,4,Men's Footwear,EE. UU.,Corporate,UT,Apparel,LATAM,Panamá,20.79999924,0.159999996,0.079999998,1,8.18999958,Central America,129.9900055,Standard Class,2015,1,5,0
+PAYMENT,2,Men's Footwear,EE. UU.,Consumer,MD,Apparel,USCA,Estados Unidos,16.89999962,0.129999995,-0.3400000259999999,1,-79.70000457500001,West of USA ,129.9900055,Second Class,2016,8,6,1
+TRANSFER,1,Men's Footwear,EE. UU.,Corporate,PA,Apparel,LATAM,Trinidad y Tobago,7.150000095,0.059999999,0.02,1,2.460000038,Caribbean,129.9900055,First Class,2015,3,5,1
+TRANSFER,4,Cleats,EE. UU.,Home Office,CA,Apparel,LATAM,Cuba,4.800000191,0.039999999,-0.3400000259999999,2,-79.70000457500001,Caribbean,59.99000168,Standard Class,2015,2,2,1
+DEBIT,0,Men's Footwear,EE. UU.,Consumer,OH,Apparel,Pacific Asia,Australia,9.100000381,0.07,0.389999986,1,47.15000153,Oceania,129.9900055,Same Day,2016,1,4,1
+PAYMENT,4,Cleats,Puerto Rico,Consumer,PR,Apparel,LATAM,Brasil,8.399999619,0.07,0.379999995,2,41.84000015,South America,59.99000168,Standard Class,2015,1,3,0
+DEBIT,0,Women's Clothing,Puerto Rico,Corporate,PR,Apparel,Pacific Asia,Bangladés,53.95999908,0.25,0.109999999,1,17.80999947,South Asia,215.8200073,Same Day,2017,12,4,1
+TRANSFER,1,Fitness Accessories,Puerto Rico,Corporate,PR,Footwear,LATAM,Panamá,10.5,0.100000001,0.319999993,3,30.22999954,Central America,34.99000168,First Class,2015,4,4,1
+TRANSFER,4,Cleats,Puerto Rico,Consumer,PR,Apparel,Europe,Reino Unido,15.0,0.25,0.300000012,1,13.5,Northern Europe,59.99000168,Standard Class,2015,7,3,0
+DEBIT,2,Fishing,EE. UU.,Consumer,CA,Fan Shop,USCA,Estados Unidos,0.0,0.0,0.349999994,1,139.9900055,West of USA ,399.980011,Second Class,2016,8,6,0
+CASH,1,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Europe,Francia,0.0,0.0,0.100000001,4,19.98999977,Western Europe,49.97999954,First Class,2017,7,3,1
+DEBIT,1,Cleats,EE. UU.,Consumer,TX,Apparel,LATAM,Honduras,15.0,0.050000001,-0.180000007,5,-49.86999893,Central America,59.99000168,First Class,2017,1,5,1
+TRANSFER,4,Fishing,Puerto Rico,Corporate,PR,Fan Shop,Africa,Marruecos,40.0,0.100000001,-0.3400000259999999,1,-79.70000457500001,North Africa,399.980011,Standard Class,2016,8,0,0
+TRANSFER,1,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Nicaragua,12.98999977,0.129999995,0.360000014,2,31.30999947,Central America,49.97999954,First Class,2017,3,6,1
+DEBIT,4,Men's Footwear,EE. UU.,Home Office,NC,Apparel,Europe,Alemania,32.5,0.25,0.430000007,1,41.91999817,Western Europe,129.9900055,Standard Class,2017,9,1,1
+DEBIT,2,Water Sports,EE. UU.,Home Office,WI,Fan Shop,LATAM,México,36.0,0.180000007,0.059999999,1,10.32999992,Central America,199.9900055,Second Class,2015,2,4,1
+TRANSFER,1,Cardio Equipment,Puerto Rico,Corporate,PR,Footwear,Pacific Asia,Australia,9.0,0.090000004,0.109999999,1,10.27999973,Oceania,99.98999786,First Class,2016,2,2,1
+TRANSFER,1,Fishing,EE. UU.,Consumer,NM,Fan Shop,LATAM,Chile,48.0,0.119999997,0.180000007,1,63.36000061,South America,399.980011,First Class,2015,3,2,1
+DEBIT,2,Shop By Sport,EE. UU.,Consumer,IL,Golf,USCA,Estados Unidos,0.0,0.0,0.360000014,1,14.52000046,West of USA ,39.99000168,Second Class,2016,6,3,0
+DEBIT,2,Indoor/Outdoor Games,EE. UU.,Home Office,CA,Fan Shop,LATAM,República Dominicana,2.0,0.01,0.330000013,4,64.3199997,Caribbean,49.97999954,Second Class,2017,2,1,1
+TRANSFER,4,Cleats,Puerto Rico,Consumer,PR,Apparel,LATAM,Cuba,18.0,0.150000006,0.349999994,2,35.68999863,Caribbean,59.99000168,Standard Class,2017,1,1,0
+PAYMENT,4,Women's Apparel,EE. UU.,Corporate,NY,Golf,LATAM,México,37.5,0.150000006,-0.3400000259999999,5,-79.70000457500001,Central America,50.0,Standard Class,2017,4,6,0
+DEBIT,4,Hockey,EE. UU.,Consumer,IL,Fitness,Europe,Ucrania,12.5,0.25,-0.189999998,2,-6.980000019,Eastern Europe,25.0,Standard Class,2016,12,5,0
+TRANSFER,1,Fishing,EE. UU.,Consumer,OH,Fan Shop,Africa,Egipto,20.0,0.050000001,-0.3400000259999999,1,-79.70000457500001,North Africa,399.980011,First Class,2016,9,5,1
+TRANSFER,4,Fishing,EE. UU.,Consumer,CA,Fan Shop,Africa,Togo,40.0,0.100000001,0.090000004,1,31.68000031,West Africa,399.980011,Standard Class,2016,11,5,0
+DEBIT,4,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,USCA,Estados Unidos,20.79999924,0.159999996,0.270000011,1,29.47999954,West of USA ,129.9900055,Standard Class,2016,5,2,1
+PAYMENT,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Cuba,12.98999977,0.129999995,-0.3400000259999999,2,-33.31000137,Caribbean,49.97999954,Standard Class,2015,1,6,1
+PAYMENT,0,Women's Apparel,EE. UU.,Consumer,CT,Golf,LATAM,Colombia,0.0,0.0,-0.230000004,3,-34.95000076,South America,50.0,Same Day,2017,2,6,1
+DEBIT,4,Cardio Equipment,EE. UU.,Corporate,CA,Footwear,Europe,Francia,39.0,0.129999995,0.01,3,3.390000105,Western Europe,99.98999786,Standard Class,2015,6,6,0
+TRANSFER,2,Indoor/Outdoor Games,EE. UU.,Corporate,FL,Fan Shop,Europe,España,7.0,0.07,0.289999992,2,26.95999908,Southern Europe,49.97999954,Second Class,2017,7,6,1
+PAYMENT,4,Men's Footwear,Puerto Rico,Corporate,PR,Apparel,Europe,Italia,1.299999952,0.01,0.289999992,1,37.3199997,Southern Europe,129.9900055,Standard Class,2015,9,0,1
+PAYMENT,4,Fishing,EE. UU.,Consumer,OH,Fan Shop,Pacific Asia,Filipinas,0.0,0.0,0.129999995,1,50.0,Southeast Asia,399.980011,Standard Class,2016,2,1,0
+DEBIT,0,Water Sports,EE. UU.,Consumer,NY,Fan Shop,LATAM,Panamá,20.0,0.100000001,0.449999988,1,81.0,Central America,199.9900055,Same Day,2017,5,3,0
+CASH,1,Water Sports,EE. UU.,Home Office,WA,Fan Shop,Pacific Asia,Pakistán,8.0,0.039999999,0.379999995,1,72.0,South Asia,199.9900055,First Class,2015,11,5,1
+PAYMENT,4,Men's Footwear,Puerto Rico,Home Office,PR,Apparel,Pacific Asia,China,0.0,0.0,0.25999999,1,33.79999924,Eastern Asia,129.9900055,Standard Class,2016,2,6,0
+CASH,4,Camping & Hiking,Puerto Rico,Corporate,PR,Fan Shop,Europe,Reino Unido,0.0,0.0,0.170000002,1,51.0,Northern Europe,299.980011,Standard Class,2017,7,3,0
+CASH,2,Men's Footwear,Puerto Rico,Corporate,PR,Apparel,Europe,Alemania,2.599999905,0.02,0.280000001,1,35.66999817,Western Europe,129.9900055,Second Class,2015,8,2,1
+CASH,4,Camping & Hiking,Puerto Rico,Consumer,PR,Fan Shop,Europe,Austria,6.0,0.02,0.449999988,1,132.2899933,Western Europe,299.980011,Standard Class,2017,9,5,0
+TRANSFER,4,Shop By Sport,EE. UU.,Consumer,MN,Golf,Pacific Asia,Camboya,0.400000006,0.01,-0.3400000259999999,1,-69.27999878,Southeast Asia,39.99000168,Standard Class,2016,1,0,0
+TRANSFER,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,Pacific Asia,Singapur,13.73999977,0.059999999,-0.3400000259999999,5,-79.70000457500001,Southeast Asia,49.97999954,Standard Class,2016,1,5,1
+TRANSFER,1,Women's Apparel,Puerto Rico,Home Office,PR,Golf,Pacific Asia,Australia,32.5,0.129999995,0.430000007,5,93.52999878,Oceania,50.0,First Class,2016,3,6,1
+DEBIT,4,Indoor/Outdoor Games,EE. UU.,Consumer,PA,Fan Shop,USCA,Estados Unidos,5.0,0.02,0.090000004,5,21.54999924,West of USA ,49.97999954,Standard Class,2016,6,1,0
+DEBIT,4,Women's Apparel,Puerto Rico,Consumer,PR,Golf,USCA,Estados Unidos,30.0,0.119999997,-0.100000001,5,-22.0,East of USA,50.0,Standard Class,2016,7,0,0
+TRANSFER,2,Women's Apparel,Puerto Rico,Corporate,PR,Golf,USCA,Estados Unidos,26.0,0.129999995,0.479999989,4,83.51999664,East of USA,50.0,Second Class,2016,7,1,0
+DEBIT,4,Shop By Sport,Puerto Rico,Consumer,PR,Golf,LATAM,Colombia,4.0,0.100000001,0.230000004,1,8.279999733,South America,39.99000168,Standard Class,2017,6,1,0
+TRANSFER,4,Shop By Sport,EE. UU.,Home Office,FL,Golf,LATAM,El Salvador,15.60000038,0.129999995,0.180000007,3,18.79000092,Central America,39.99000168,Standard Class,2017,2,5,0
+TRANSFER,4,Camping & Hiking,EE. UU.,Corporate,TN,Fan Shop,Europe,Francia,0.0,0.0,0.25999999,1,77.98999786,Western Europe,299.980011,Standard Class,2015,9,5,0
+TRANSFER,4,Camping & Hiking,Puerto Rico,Consumer,PR,Fan Shop,Europe,Francia,39.0,0.129999995,-0.180000007,1,-45.66999817,Western Europe,299.980011,Standard Class,2015,6,2,0
+DEBIT,4,Women's Apparel,EE. UU.,Consumer,NY,Golf,Europe,Francia,62.5,0.25,0.340000004,5,63.38000107,Western Europe,50.0,Standard Class,2017,10,6,0
+DEBIT,2,Accessories,EE. UU.,Home Office,TX,Outdoors,USCA,Estados Unidos,4.5,0.180000007,-0.129999995,1,-2.700000048,West of USA ,24.98999977,Second Class,2016,5,4,1
+DEBIT,2,Indoor/Outdoor Games,EE. UU.,Consumer,OH,Fan Shop,Pacific Asia,China,6.0,0.039999999,0.109999999,3,16.27000046,Eastern Asia,49.97999954,Second Class,2015,11,5,1
+CASH,4,Women's Apparel,EE. UU.,Consumer,HI,Golf,Europe,Italia,10.0,0.050000001,0.349999994,4,66.5,Southern Europe,50.0,Standard Class,2017,6,2,0
+DEBIT,1,Cleats,Puerto Rico,Corporate,PR,Apparel,USCA,Estados Unidos,7.800000191,0.129999995,0.050000001,1,2.609999895,South of  USA ,59.99000168,First Class,2016,7,6,1
+DEBIT,4,Shop By Sport,EE. UU.,Home Office,CA,Golf,LATAM,Panamá,28.79000092,0.180000007,-0.059999999,4,-7.480000019,Central America,39.99000168,Standard Class,2017,5,3,1
+TRANSFER,2,Shop By Sport,EE. UU.,Home Office,CA,Golf,USCA,Estados Unidos,8.0,0.050000001,0.360000014,4,54.70999908,East of USA,39.99000168,Second Class,2016,8,0,1
+PAYMENT,4,Camping & Hiking,EE. UU.,Corporate,IL,Fan Shop,LATAM,Brasil,66.8749992825,0.25,0.419999987,1,94.48999786,South America,299.980011,Standard Class,2015,1,3,0
+DEBIT,4,Cleats,EE. UU.,Consumer,NY,Apparel,Europe,Francia,66.8749992825,0.25,0.25,5,56.24000168,Western Europe,59.99000168,Standard Class,2017,6,2,1
+CASH,1,Golf Gloves,EE. UU.,Consumer,HI,Outdoors,LATAM,Brasil,3.599999905,0.119999997,0.49000001,3,12.92000008,South America,9.989999771,First Class,2017,3,2,1
+DEBIT,0,Water Sports,EE. UU.,Corporate,TX,Fan Shop,Europe,Francia,14.0,0.07,0.100000001,1,18.60000038,Western Europe,199.9900055,Same Day,2015,6,6,1
+DEBIT,1,Men's Footwear,Puerto Rico,Corporate,PR,Apparel,Europe,Reino Unido,15.60000038,0.119999997,0.479999989,1,54.90999985,Northern Europe,129.9900055,First Class,2015,9,2,1
+PAYMENT,4,Shop By Sport,EE. UU.,Corporate,MO,Golf,Pacific Asia,India,12.0,0.100000001,0.310000002,3,33.79999924,South Asia,39.99000168,Standard Class,2015,12,2,1
+TRANSFER,4,Fishing,EE. UU.,Consumer,CA,Fan Shop,Pacific Asia,Indonesia,52.0,0.129999995,0.300000012,1,104.3899994,Southeast Asia,399.980011,Standard Class,2015,12,4,0
+CASH,2,Cleats,Puerto Rico,Consumer,PR,Apparel,USCA,Estados Unidos,6.0,0.02,0.460000008,5,135.2200012,US Center ,59.99000168,Second Class,2016,5,6,1
+TRANSFER,4,Fishing,EE. UU.,Consumer,HI,Fan Shop,LATAM,República Dominicana,48.0,0.119999997,0.460000008,1,151.50000762500002,Caribbean,399.980011,Standard Class,2015,5,3,1
+DEBIT,2,Shop By Sport,EE. UU.,Consumer,AZ,Golf,Europe,Italia,14.39999962,0.090000004,0.469999999,4,68.41000366,Southern Europe,39.99000168,Second Class,2017,7,6,1
+DEBIT,4,Camping & Hiking,EE. UU.,Home Office,IL,Fan Shop,LATAM,Brasil,3.0,0.01,0.479999989,1,142.5500031,South America,299.980011,Standard Class,2015,1,0,0
+DEBIT,4,Water Sports,EE. UU.,Home Office,CA,Fan Shop,Europe,Italia,8.0,0.039999999,0.170000002,1,32.63999939,Southern Europe,199.9900055,Standard Class,2015,8,6,0
+PAYMENT,2,Cardio Equipment,EE. UU.,Corporate,GA,Footwear,Pacific Asia,Australia,4.0,0.01,0.349999994,4,138.5899963,Oceania,99.98999786,Second Class,2016,2,1,1
+TRANSFER,2,Men's Footwear,Puerto Rico,Home Office,PR,Apparel,LATAM,Cuba,26.0,0.200000003,0.079999998,1,7.800000191,Caribbean,129.9900055,Second Class,2017,5,3,0
+DEBIT,4,Cleats,Puerto Rico,Home Office,PR,Apparel,Pacific Asia,Japón,35.99000168,0.150000006,0.469999999,4,95.86000061,Eastern Asia,59.99000168,Standard Class,2015,12,6,0
+DEBIT,4,Camping & Hiking,EE. UU.,Corporate,OR,Fan Shop,USCA,Estados Unidos,39.0,0.129999995,0.360000014,1,93.94999695,West of USA ,299.980011,Standard Class,2016,5,6,0
+TRANSFER,2,Women's Apparel,EE. UU.,Home Office,CA,Golf,Pacific Asia,Pakistán,3.5,0.07,-0.109999999,1,-5.25,South Asia,50.0,Second Class,2016,2,5,1
+DEBIT,4,Fishing,EE. UU.,Consumer,PA,Fan Shop,Europe,Alemania,48.0,0.119999997,0.469999999,1,151.50000762500002,Western Europe,399.980011,Standard Class,2017,8,2,1
+DEBIT,1,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,Pacific Asia,Irán,6.5,0.050000001,0.439999998,1,54.34000015,South Asia,129.9900055,First Class,2016,8,0,1
+TRANSFER,1,Cardio Equipment,Puerto Rico,Consumer,PR,Footwear,LATAM,El Salvador,66.8749992825,0.180000007,0.109999999,4,37.06000137,Central America,99.98999786,First Class,2015,2,3,1
+CASH,0,Camping & Hiking,EE. UU.,Consumer,PA,Fan Shop,Europe,España,66.8749992825,0.25,0.0,1,0.0,Southern Europe,299.980011,Same Day,2015,10,6,1
+DEBIT,4,Indoor/Outdoor Games,EE. UU.,Home Office,NY,Fan Shop,LATAM,El Salvador,0.0,0.0,-0.159999996,4,-32.59000015,Central America,49.97999954,Standard Class,2015,2,1,1
+DEBIT,4,Women's Apparel,EE. UU.,Corporate,WV,Golf,LATAM,Brasil,3.5,0.07,0.479999989,1,22.3199997,South America,50.0,Standard Class,2015,3,0,0
+DEBIT,4,Toys,Puerto Rico,Home Office,PR,Fan Shop,Pacific Asia,Australia,1.5,0.129999995,-0.039999999,1,-0.430000007,Oceania,11.53999996,Standard Class,2018,1,1,1
+TRANSFER,4,Trade-In,EE. UU.,Consumer,NY,Outdoors,Europe,Alemania,5.760000229,0.090000004,0.310000002,4,18.21999931,Western Europe,15.98999977,Standard Class,2015,6,1,1
+DEBIT,1,Fishing,EE. UU.,Home Office,CA,Fan Shop,USCA,Estados Unidos,8.0,0.02,-0.239999995,1,-79.70000457500001,West of USA ,399.980011,First Class,2016,5,6,1
+PAYMENT,2,Water Sports,EE. UU.,Consumer,CA,Fan Shop,Pacific Asia,Turquía,40.0,0.200000003,0.479999989,1,76.80000305,West Asia,199.9900055,Second Class,2017,1,4,1
+DEBIT,4,Shop By Sport,EE. UU.,Consumer,FL,Golf,LATAM,México,0.0,0.0,0.280000001,4,44.79000092,Central America,39.99000168,Standard Class,2015,1,0,0
+CASH,1,Cardio Equipment,EE. UU.,Corporate,CA,Footwear,Europe,España,16.0,0.039999999,-0.219999999,4,-79.70000457500001,Southern Europe,99.98999786,First Class,2017,7,2,1
+DEBIT,4,Cleats,Puerto Rico,Consumer,PR,Apparel,LATAM,Brasil,18.0,0.100000001,0.360000014,3,58.31000137,South America,59.99000168,Standard Class,2017,2,1,1
+PAYMENT,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,LATAM,República Dominicana,15.98999977,0.159999996,-0.3400000259999999,2,-30.8199997,Caribbean,49.97999954,Standard Class,2015,4,4,1
+DEBIT,2,Indoor/Outdoor Games,EE. UU.,Corporate,CA,Fan Shop,Pacific Asia,Corea del Sur,16.98999977,0.170000002,-0.3400000259999999,2,-55.34000015,Eastern Asia,49.97999954,Second Class,2015,11,0,1
+DEBIT,4,Cardio Equipment,EE. UU.,Home Office,AZ,Footwear,LATAM,República Dominicana,40.0,0.100000001,0.449999988,4,151.50000762500002,Caribbean,99.98999786,Standard Class,2015,3,5,1
+TRANSFER,4,Women's Apparel,EE. UU.,Corporate,CA,Golf,USCA,Estados Unidos,30.0,0.150000006,-0.3400000259999999,4,-79.70000457500001,East of USA,50.0,Standard Class,2016,6,5,0
+TRANSFER,4,Cleats,EE. UU.,Corporate,CO,Apparel,LATAM,Honduras,7.199999809,0.119999997,-0.029999999,1,-1.529999971,Central America,59.99000168,Standard Class,2017,2,1,0
+DEBIT,4,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,Pacific Asia,Myanmar (Birmania),32.5,0.25,-0.3400000259999999,1,-77.98999786,Southeast Asia,129.9900055,Standard Class,2016,1,2,1
+CASH,4,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,Europe,Rusia,14.0,0.07,0.479999989,1,89.27999878,Eastern Europe,199.9900055,Standard Class,2016,11,5,0
+PAYMENT,4,Camping & Hiking,EE. UU.,Corporate,NY,Fan Shop,Africa,Nigeria,48.0,0.159999996,0.180000007,1,44.84999847,West Africa,299.980011,Standard Class,2016,11,1,0
+PAYMENT,1,Women's Apparel,EE. UU.,Consumer,CA,Golf,LATAM,México,25.5,0.170000002,0.479999989,3,59.75999832,Central America,50.0,First Class,2017,4,1,1
+PAYMENT,1,Women's Apparel,EE. UU.,Home Office,TN,Golf,Europe,Alemania,12.5,0.25,0.109999999,1,4.130000114,Western Europe,50.0,First Class,2015,9,1,1
+TRANSFER,0,Hunting & Shooting,EE. UU.,Home Office,MO,Fan Shop,Europe,Francia,10.5,0.07,0.280000001,1,39.06000137,Western Europe,149.9900055,Same Day,2017,6,6,0
+TRANSFER,4,Cleats,Puerto Rico,Home Office,PR,Apparel,LATAM,México,21.60000038,0.180000007,0.280000001,2,27.54999924,Central America,59.99000168,Standard Class,2015,1,6,0
+DEBIT,4,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Brasil,49.97999954,0.200000003,0.349999994,5,69.97000122,South America,49.97999954,Standard Class,2017,6,1,0
+DEBIT,4,Cardio Equipment,EE. UU.,Consumer,NY,Footwear,LATAM,Honduras,45.0,0.090000004,0.439999998,5,151.50000762500002,Central America,99.98999786,Standard Class,2015,4,5,0
+CASH,0,Trade-In,EE. UU.,Home Office,WI,Outdoors,LATAM,Colombia,2.880000114,0.090000004,0.5,2,14.55000019,South America,15.98999977,Same Day,2015,1,0,0
+DEBIT,2,Men's Footwear,Puerto Rico,Corporate,PR,Apparel,Europe,Francia,19.5,0.150000006,-0.3400000259999999,1,-53.04000092,Western Europe,129.9900055,Second Class,2017,8,3,1
+TRANSFER,4,Men's Footwear,Puerto Rico,Corporate,PR,Apparel,Europe,Reino Unido,26.0,0.200000003,-0.200000003,1,-20.79999924,Northern Europe,129.9900055,Standard Class,2015,8,5,1
+TRANSFER,0,Women's Apparel,Puerto Rico,Corporate,PR,Golf,Europe,Rusia,14.0,0.07,0.270000011,4,50.22000122,Eastern Europe,50.0,Same Day,2016,11,2,1
+PAYMENT,4,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,LATAM,Bolivia,30.0,0.150000006,0.280000001,1,47.59999847,South America,199.9900055,Standard Class,2015,5,5,0
+TRANSFER,2,Fishing,Puerto Rico,Consumer,PR,Fan Shop,Europe,España,40.0,0.100000001,0.289999992,1,104.3899994,Southern Europe,399.980011,Second Class,2015,7,1,1
+PAYMENT,2,Electronics,EE. UU.,Consumer,CA,Outdoors,USCA,Estados Unidos,6.400000095,0.050000001,-0.180000007,4,-21.27000046,East of USA,31.98999977,Second Class,2016,4,4,1
+DEBIT,4,Accessories,EE. UU.,Corporate,CA,Outdoors,Europe,Alemania,12.0,0.159999996,-0.3400000259999999,3,-42.8199997,Western Europe,24.98999977,Standard Class,2015,6,6,1
+TRANSFER,4,Cleats,Puerto Rico,Corporate,PR,Apparel,Europe,Francia,14.39999962,0.119999997,0.349999994,2,36.95000076,Western Europe,59.99000168,Standard Class,2015,9,6,0
+TRANSFER,1,Baby ,EE. UU.,Home Office,PA,Apparel,Pacific Asia,Australia,1.179999948,0.02,0.330000013,1,18.8199997,Oceania,59.08000183,First Class,2017,12,0,1
+TRANSFER,1,Music,Puerto Rico,Home Office,PR,Discs Shop,Pacific Asia,Australia,31.28000069,0.119999997,0.280000001,1,64.22000122,Oceania,260.6499939,First Class,2017,11,6,1
+DEBIT,2,Shop By Sport,Puerto Rico,Consumer,PR,Golf,LATAM,República Dominicana,8.800000191,0.059999999,0.280000001,4,42.33000183,Caribbean,39.99000168,Second Class,2017,2,1,1
+DEBIT,4,Water Sports,Puerto Rico,Consumer,PR,Fan Shop,Pacific Asia,Uzbekistán,24.0,0.119999997,0.49000001,1,86.23999786,Central Asia,199.9900055,Standard Class,2016,9,5,0
+TRANSFER,0,Cardio Equipment,Puerto Rico,Corporate,PR,Footwear,Pacific Asia,India,34.0,0.170000002,0.469999999,2,78.01000214,South Asia,99.98999786,Same Day,2015,12,3,0
+TRANSFER,1,Fishing,EE. UU.,Home Office,NJ,Fan Shop,Pacific Asia,Arabia Saudí,60.0,0.150000006,0.469999999,1,151.50000762500002,West Asia,399.980011,First Class,2016,12,2,1
+TRANSFER,4,Fishing,EE. UU.,Consumer,NY,Fan Shop,Africa,SudAfrica,40.0,0.100000001,0.430000007,1,151.50000762500002,Southern Africa,399.980011,Standard Class,2016,11,1,0
+TRANSFER,2,Water Sports,Puerto Rico,Corporate,PR,Fan Shop,Europe,Bélgica,2.0,0.01,0.340000004,1,67.3199997,Western Europe,199.9900055,Second Class,2017,9,6,0
+PAYMENT,2,Indoor/Outdoor Games,EE. UU.,Consumer,TN,Fan Shop,Africa,Nigeria,22.48999977,0.150000006,0.349999994,3,44.61000061,West Africa,49.97999954,Second Class,2016,11,2,1
+TRANSFER,4,Girls' Apparel,Puerto Rico,Consumer,PR,Golf,USCA,Estados Unidos,11.19999981,0.039999999,0.140000001,4,37.63000107,West of USA ,70.0,Standard Class,2016,8,3,1
+TRANSFER,4,Fishing,Puerto Rico,Consumer,PR,Fan Shop,Europe,Francia,22.0,0.059999999,0.109999999,1,42.70999908,Western Europe,399.980011,Standard Class,2017,6,2,0
+TRANSFER,4,Cleats,EE. UU.,Consumer,CA,Apparel,Africa,Egipto,15.60000038,0.129999995,0.360000014,2,37.88999939,North Africa,59.99000168,Standard Class,2017,1,3,1
+TRANSFER,2,Cardio Equipment,EE. UU.,Home Office,FL,Footwear,Pacific Asia,Australia,50.99000168,0.170000002,0.449999988,3,112.0400009,Oceania,99.98999786,Second Class,2016,2,5,1
+TRANSFER,0,Indoor/Outdoor Games,Puerto Rico,Consumer,PR,Fan Shop,USCA,Canada,35.99000168,0.180000007,0.349999994,4,57.38000107,Canada,49.97999954,Same Day,2017,1,2,0
+TRANSFER,4,Men's Footwear,EE. UU.,Consumer,IL,Apparel,Pacific Asia,Turquía,0.0,0.0,-0.330000013,1,-43.29000092,West Asia,129.9900055,Standard Class,2016,10,5,0
+DEBIT,4,Cleats,EE. UU.,Consumer,IN,Apparel,LATAM,Honduras,14.39999962,0.119999997,-0.239999995,2,-25.12999916,Central America,59.99000168,Standard Class,2015,1,1,0
+TRANSFER,2,Men's Footwear,Puerto Rico,Consumer,PR,Apparel,LATAM,Honduras,32.5,0.25,0.469999999,1,45.8199997,Central America,129.9900055,Second Class,2015,5,5,1
+TRANSFER,4,Camping & Hiking,EE. UU.,Corporate,CA,Fan Shop,Europe,Rumania,9.0,0.029999999,-0.3400000259999999,1,-79.70000457500001,Eastern Europe,299.980011,Standard Class,2016,11,5,0
+DEBIT,1,Computers,EE. UU.,Corporate,MD,Technology,Europe,Francia,66.8749992825,0.090000004,0.100000001,1,136.5,Western Europe,424.97501375,First Class,2017,10,6,1
+TRANSFER,1,Men's Footwear,EE. UU.,Home Office,CA,Apparel,USCA,Estados Unidos,13.0,0.100000001,0.039999999,1,5.150000095,South of  USA ,129.9900055,First Class,2016,7,6,0
+PAYMENT,4,DVDs,Puerto Rico,Consumer,PR,Discs Shop,Pacific Asia,Indonesia,29.59000015,0.180000007,0.280000001,1,37.74000168,Southeast Asia,164.3800049,Standard Class,2017,11,5,1
+PAYMENT,4,Women's Apparel,Puerto Rico,Consumer,PR,Golf,Europe,Francia,2.5,0.050000001,0.230000004,1,10.68999958,Western Europe,50.0,Standard Class,2015,7,4,0
+TRANSFER,1,Women's Apparel,EE. UU.,Corporate,NJ,Golf,LATAM,Brasil,0.0,0.0,-0.209999993,2,-21.29999924,South America,50.0,First Class,2015,5,6,0
+TRANSFER,1,Hockey,Puerto Rico,Corporate,PR,Fitness,LATAM,Brasil,6.0,0.119999997,0.340000004,2,14.86999989,South America,25.0,First Class,2015,5,2,1
+DEBIT,4,Camping & Hiking,Puerto Rico,Corporate,PR,Fan Shop,Europe,Alemania,51.0,0.170000002,-0.25,1,-62.25,Western Europe,299.980011,Standard Class,2017,9,3,0
+DEBIT,0,Men's Footwear,EE. UU.,Corporate,PA,Apparel,Africa,República Democrática del Congo,13.0,0.100000001,0.349999994,1,40.95000076,Central Africa,129.9900055,Same Day,2016,11,0,0
+DEBIT,2,Indoor/Outdoor Games,EE. UU.,Consumer,NJ,Fan Shop,Europe,Reino Unido,5.0,0.050000001,0.129999995,2,11.86999989,Northern Europe,49.97999954,Second Class,2015,8,1,0
+CASH,4,Cleats,Puerto Rico,Corporate,PR,Apparel,USCA,Estados Unidos,6.0,0.100000001,0.059999999,1,3.24000001,West of USA ,59.99000168,Standard Class,2016,4,2,0
+TRANSFER,4,Indoor/Outdoor Games,EE. UU.,Corporate,OH,Fan Shop,Pacific Asia,Indonesia,1.5,0.029999999,0.25,1,12.11999989,Southeast Asia,49.97999954,Standard Class,2015,11,6,0
+DEBIT,2,Cleats,EE. UU.,Consumer,MA,Apparel,LATAM,Honduras,0.0,0.0,-0.230000004,3,-40.49000168,Central America,59.99000168,Second Class,2015,1,1,1
+DEBIT,4,Water Sports,EE. UU.,Corporate,CA,Fan Shop,LATAM,Panamá,34.0,0.170000002,0.409999996,1,68.05999756,Central America,199.9900055,Standard Class,2015,1,3,0
+PAYMENT,1,Indoor/Outdoor Games,EE. UU.,Corporate,NY,Fan Shop,LATAM,Panamá,8.0,0.039999999,0.49000001,4,94.04000092,Central America,49.97999954,First Class,2015,3,2,1
+DEBIT,4,Water Sports,EE. UU.,Consumer,CA,Fan Shop,Pacific Asia,Malasia,8.0,0.039999999,0.209999993,1,40.3199997,Southeast Asia,199.9900055,Standard Class,2016,1,6,1
+DEBIT,1,Men's Footwear,EE. UU.,Corporate,CA,Apparel,USCA,Estados Unidos,6.5,0.050000001,-0.129999995,1,-15.93000031,East of USA,129.9900055,First Class,2016,7,3,1
+PAYMENT,2,Camping & Hiking,EE. UU.,Corporate,CA,Fan Shop,Europe,Reino Unido,9.0,0.029999999,0.349999994,1,101.8399963,Northern Europe,299.980011,Second Class,2015,8,1,1
+DEBIT,1,Women's Apparel,Puerto Rico,Corporate,PR,Golf,LATAM,Martinica,0.0,0.0,0.0,1,0.0,Caribbean,50.0,First Class,2017,3,5,1
+DEBIT,1,Shop By Sport,EE. UU.,Home Office,NY,Golf,Pacific Asia,Australia,7.199999809,0.090000004,0.439999998,2,32.02000046,Oceania,39.99000168,First Class,2016,1,6,1
+CASH,4,Shop By Sport,EE. UU.,Consumer,CA,Golf,LATAM,México,10.19999981,0.170000002,0.469999999,2,23.40999985,Central America,30.0,Standard Class,2015,2,4,0
+DEBIT,4,Cleats,Puerto Rico,Consumer,PR,Apparel,Pacific Asia,Filipinas,1.200000048,0.01,0.059999999,2,7.480000019,Southeast Asia,59.99000168,Standard Class,2015,11,5,1
+DEBIT,4,Camping & Hiking,EE. UU.,Consumer,CA,Fan Shop,USCA,Estados Unidos,66.8749992825,0.25,0.469999999,1,105.7399979,West of USA ,299.980011,Standard Class,2016,7,6,0
+DEBIT,2,Shop By Sport,Puerto Rico,Consumer,PR,Golf,Pacific Asia,Australia,10.80000019,0.119999997,0.469999999,3,37.22000122,Oceania,30.0,Second Class,2016,4,4,0

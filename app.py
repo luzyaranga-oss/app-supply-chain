@@ -733,22 +733,40 @@ DET = {
         "El mayor ROC-AUC de todos los modelos.", "Detecta menos retrasos reales que AdaBoost."),
     "bagging_arbol": ("Ensamble", "Bagging + Árbol", "Árboles con muestras distintas.",
         "Entrena muchos árboles, cada uno con una muestra diferente de los pedidos, y promedia sus respuestas.",
-        "La mayor precisión: sus alertas casi siempre son reales.", "Deja pasar cerca de 4 de cada 10 retrasos."),
+        "Alta precisión: más de 8 de cada 10 alertas son reales.", "Deja pasar cerca de 4 de cada 10 retrasos."),
     "gradient_boosting": ("Ensamble", "Gradient Boosting", "Cada árbol corrige al anterior.",
         "Construye árboles en cadena: cada uno intenta corregir los errores del anterior hasta afinar la predicción.",
         "Alta precisión en sus alertas.", "Deja pasar cerca de 4 de cada 10 retrasos."),
     "adaboost_arbol_FINAL": ("Modelo final", "AdaBoost + Árbol", "Da más peso a los casos difíciles.",
         "Entrena árboles uno tras otro; cada nuevo árbol presta más atención a los pedidos que los anteriores clasificaron mal.",
-        "Detecta más retrasos reales (recall de 68 %).", "Memoriza parte del entrenamiento; se controló con validación cruzada."),
+        "Detecta más retrasos reales (recall de 68 %).", "Sobreajusta: memoriza parte del entrenamiento (se midió con validación cruzada y prueba)."),
 }
 
 
-def metricas_modelo(clave):
-    """Métricas de prueba. El modelo final usa las cifras de nuestro notebook; los demás, las de su reentrenamiento en la app."""
-    if clave == "adaboost_arbol_FINAL":
-        return dict(acc=0.6714, prec=0.7102, rec=0.6771, f1=0.6932, auc=0.7416)
-    r = cargar_metricas_locales().set_index("modelo").loc[clave]
-    return dict(acc=float(r["accuracy"]), prec=float(r["precision"]), rec=float(r["recall"]), f1=float(r["f1"]), auc=float(r["roc_auc"]))
+# Fuente única de cifras: salen del notebook (no se recalculan ni se reentrenan para la app).
+FINAL = "adaboost_arbol_FINAL"
+# Modelo final: evaluado UNA sola vez en el conjunto de prueba (celda 163 del notebook).
+TEST_FINAL = dict(acc=0.6714, prec=0.7102, rec=0.6771, f1=0.6932, auc=0.7416)
+# Matriz de confusión real del modelo final en prueba (celda 175 del notebook; suma 36,104).
+MATRIZ_FINAL = dict(tp=13403, fn=6393, fp=5469, tn=10839)
+# Demás modelos: validación cruzada de 5 particiones sobre el entrenamiento (celdas 136, 142 y 148 del notebook),
+# con los mejores hiperparámetros de Grid Search. Nunca se evaluaron en prueba.
+METRICAS_CV = {
+    "regresion_logistica": dict(acc=0.6938, prec=0.8205, rec=0.5651, f1=0.6693, auc=0.7408),
+    "svm_muestra15000":    dict(acc=0.6921, prec=0.8273, rec=0.5544, f1=0.6637, auc=0.7302),
+    "arbol_decision":      dict(acc=0.6978, prec=0.8210, rec=0.5741, f1=0.6757, auc=0.7447),
+    "random_forest":       dict(acc=0.7022, prec=0.8414, rec=0.5630, f1=0.6746, auc=0.7756),
+    "bagging_arbol":       dict(acc=0.7033, prec=0.8414, rec=0.5655, f1=0.6764, auc=0.7663),
+    "gradient_boosting":   dict(acc=0.6990, prec=0.8315, rec=0.5657, f1=0.6733, auc=0.7556),
+    "adaboost_arbol_FINAL": dict(acc=0.6688, prec=0.7049, rec=0.6810, f1=0.6927, auc=0.7400),
+}
+
+
+def metricas_modelo(clave, fuente=None):
+    """fuente='test' (solo el modelo final) o 'cv' (validación cruzada, todos). Por defecto: prueba para el final y CV para el resto."""
+    if fuente is None:
+        fuente = "test" if clave == FINAL else "cv"
+    return dict(TEST_FINAL) if fuente == "test" else dict(METRICAS_CV[clave])
 
 
 def nombre_corto(k):
@@ -794,7 +812,7 @@ elif pagina == "El problema":
     tiles(
         [
             {"t": "Ingresas el pedido", "p": "Pago, envío, destino y producto. Manual o con plantilla."},
-            {"t": "El modelo lo analiza", "p": "Lo compara con 180,519 entregas anteriores de DataCo."},
+            {"t": "El modelo lo analiza", "p": "Aprendió de 144,415 entregas anteriores de DataCo (80 % de los datos)."},
             {"t": "Recibes una probabilidad", "p": "Un valor de 0 % a 100 % de que llegue tarde."},
             {"t": "Decides", "p": "Priorizas el pedido o pruebas otro modo de envío."},
         ],
@@ -860,10 +878,10 @@ elif pagina == "Algoritmos":
     with c2:
         with st.container(key="dark_a2"):
             H(
-                titulo_card("Cómo rindió con pedidos nuevos", "Datos de prueba, 36,104 pedidos.", True)
+                titulo_card("Cómo rindió con pedidos nuevos" if sel == FINAL else "Cómo rindió en la comparación", "Datos de prueba, 36,104 pedidos." if sel == FINAL else ("Validación cruzada, 5 particiones (muestra de 15,000 pedidos)." if sel == "svm_muestra15000" else "Validación cruzada, 5 particiones (144,415 pedidos)."), True)
                 + barras(
                     [("Exactitud", m["acc"]), ("Precisión", m["prec"]), ("Recall", m["rec"]), ("F1", m["f1"]), ("ROC-AUC", m["auc"])],
-                    destacado="Recall", fmt="{:.0%}", escala=(0.4, 0.9), oscuro=True,
+                    destacado="Recall", fmt="{:.1%}", escala=(0.4, 0.9), oscuro=True,
                 )
             )
 
@@ -872,14 +890,14 @@ elif pagina == "Algoritmos":
         [
             {"t": "Se separaron los datos", "p": "80 % para entrenar y 20 % (36,104 pedidos) para probar."},
             {"t": "Se comparó con validación cruzada", "p": "Cada modelo se evaluó varias veces con datos distintos."},
-            {"t": "Se ajustó el finalista", "p": "AdaBoost con árboles de profundidad 12 y 50 árboles.", "meta": "Elegido por su recall"},
+            {"t": "Se ajustó el finalista", "p": "AdaBoost con árboles de profundidad 12 y 50 árboles. Se evaluó una sola vez con los pedidos de prueba.", "meta": "Elegido por su recall"},
         ],
         cols=3,
     )
 
 # ================================================================== MÉTRICAS
 elif pagina == "Métricas":
-    page_head("Resultados", "Qué tan bien funciona cada algoritmo", "Todos se probaron con los mismos 36,104 pedidos nuevos.")
+    page_head("Resultados", "Qué tan bien funciona cada algoritmo", "El modelo final se evaluó una sola vez con 36,104 pedidos nuevos. Los demás se comparan con validación cruzada.")
     with st.container(key="card_c0"):
         k1, k2 = st.columns([1.4, 1.6], gap="large")
         with k1:
@@ -889,32 +907,37 @@ elif pagina == "Métricas":
                 '<div class="flow" style="margin:.1rem 0 0"><div><span>Estado</span><b>'
                 + ("Modelo final elegido" if clave == "adaboost_arbol_FINAL" else "Modelo comparado")
                 + '</b></div><div><span>Cifras</span><b>'
-                + ("Del notebook del equipo" if clave == "adaboost_arbol_FINAL" else "Reentrenado para la app")
+                + ("Prueba: 36,104 pedidos nuevos" if clave == FINAL else "Validación cruzada (5 particiones)")
                 + "</b></div></div>"
             )
     st.write("")
     m = metricas_modelo(clave)
     anillos(
         [
-            ("Exactitud", m["acc"], f"{m['acc']:.0%}", "pedidos bien clasificados"),
-            ("Precisión", m["prec"], f"{m['prec']:.0%}", "de las alertas eran reales"),
-            ("Recall", m["rec"], f"{m['rec']:.0%}", "de los retrasos fueron detectados"),
-            ("F1", m["f1"], f"{m['f1']:.0%}", "equilibrio entre precisión y recall"),
-            ("ROC-AUC", m["auc"], f"{m['auc']:.2f}", "capacidad de separar casos", True),
+            ("Exactitud", m["acc"], f"{m['acc']:.1%}", "pedidos bien clasificados"),
+            ("Precisión", m["prec"], f"{m['prec']:.1%}", "de las alertas eran reales"),
+            ("Recall", m["rec"], f"{m['rec']:.1%}", "de los retrasos fueron detectados"),
+            ("F1", m["f1"], f"{m['f1']:.1%}", "equilibrio entre precisión y recall"),
+            ("ROC-AUC", m["auc"], f"{m['auc']:.3f}", "capacidad de separar casos", True),
         ]
     )
     st.write("")
     n_t, prev = 36104, 0.5483
-    pos = n_t * prev
-    tp = round(pos * m["rec"])
-    fn = round(pos - tp)
-    fp = round(tp / m["prec"] - tp)
-    tn = n_t - tp - fn - fp
+    if clave == FINAL:
+        tp, fn, fp, tn = MATRIZ_FINAL["tp"], MATRIZ_FINAL["fn"], MATRIZ_FINAL["fp"], MATRIZ_FINAL["tn"]
+        sub_cm = "Pedidos de prueba (36,104). Cifras reales del notebook."
+    else:
+        pos = n_t * prev
+        tp = round(pos * m["rec"])
+        fn = round(pos - tp)
+        fp = round(tp / m["prec"] - tp)
+        tn = n_t - tp - fn - fp
+        sub_cm = "Estimación a escala de 36,104 pedidos, a partir de la validación cruzada."
     c1, c2 = st.columns([1, 1.15], gap="large")
     with c1:
         with st.container(key="card_m1"):
             H(
-                titulo_card(f"Qué pasó con los pedidos: {nombre_corto(clave)}", "Cifras aproximadas, reconstruidas a partir de las métricas.")
+                titulo_card(f"Qué pasó con los pedidos: {nombre_corto(clave)}", sub_cm)
                 + '<div class="cm"><div></div><div class="ch">Con alerta</div><div class="ch">Sin alerta</div>'
                 f'<div class="rh">Llegó tarde</div><div class="c good">{tp:,}<small>retrasos detectados</small></div><div class="c bad">{fn:,}<small>retrasos no detectados</small></div>'
                 f'<div class="rh">Llegó a tiempo</div><div class="c warn">{fp:,}<small>falsas alertas</small></div><div class="c info">{tn:,}<small>a tiempo confirmados</small></div></div>'
@@ -922,14 +945,14 @@ elif pagina == "Métricas":
             )
     with c2:
         with st.container(key="card_m2"):
-            H(titulo_card("Comparación entre algoritmos", "Elige la métrica. El algoritmo seleccionado va resaltado."))
+            H(titulo_card("Comparación entre algoritmos", "Validación cruzada de 5 particiones, el mismo método para los 7. El algoritmo seleccionado va resaltado."))
             opciones = {"Exactitud": "acc", "Precisión": "prec", "Recall": "rec", "F1": "f1", "ROC-AUC": "auc"}
             try:
                 metrica = st.segmented_control("Métrica", list(opciones), default="Recall", key="met_metrica", label_visibility="collapsed")
             except Exception:
                 metrica = st.selectbox("Métrica", list(opciones), index=2, key="met_metrica", label_visibility="collapsed")
             metrica = metrica or "Recall"
-            datos = sorted(((k, metricas_modelo(k)[opciones[metrica]]) for k in ORDEN), key=lambda t: t[1])
+            datos = sorted(((k, metricas_modelo(k, "cv")[opciones[metrica]]) for k in ORDEN), key=lambda t: t[1])
             fig = go.Figure(
                 go.Bar(
                     x=[v for _, v in datos], y=[nombre_corto(k) for k, _ in datos], orientation="h",

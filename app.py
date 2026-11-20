@@ -31,7 +31,8 @@ CSS = """
 .stApp{background:linear-gradient(135deg,#E4EDFF 0%,#EEE8FF 48%,#FCEAF0 100%);background-attachment:fixed;
 font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);}
 header[data-testid="stHeader"]{background:transparent;}
-[data-testid="stToolbar"],[data-testid="stDecoration"],#MainMenu,footer,[data-testid="stAppDeployButton"]{display:none!important;}
+[data-testid="stDecoration"],#MainMenu,footer,[data-testid="stAppDeployButton"],[data-testid="stToolbarActions"],[data-testid="stMainMenu"],.stDeployButton{display:none!important;}
+[data-testid="stToolbar"]{background:transparent;}
 .block-container{max-width:1240px;padding:2.2rem 2.4rem 4rem;}
 p,li{line-height:1.65;}
 
@@ -375,7 +376,8 @@ def df_a_modelo(df):
     for amigable in NUMS:
         col = MAPA[amigable]
         out[col] = pd.to_numeric(out[col], errors="coerce")
-    out["order_year"], out["order_month"], out["order_dayofweek"] = fechas.dt.year, fechas.dt.month, fechas.dt.dayofweek
+    out["order_year"] = fechas.dt.year.clip(info["rangos"]["order_year"]["min"], info["rangos"]["order_year"]["max"])
+    out["order_month"], out["order_dayofweek"] = fechas.dt.month, fechas.dt.dayofweek
     out["Days for shipment (scheduled)"] = out["Shipping Mode"].map(DIAS)
     validas = out.notna().all(axis=1) & fechas.notna()
     out = out[validas].copy()
@@ -660,6 +662,33 @@ header[data-testid="stHeader"]{height:2rem;min-height:0;}
 """
 st.markdown(CSS4, unsafe_allow_html=True)
 
+CSS5 = """
+<style>
+.bar-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;}
+@media (max-width:820px){.bar-grid{grid-template-columns:1fr;}}
+
+/* ---------- botón para abrir la barra lateral (siempre visible, con rayitas) ---------- */
+[data-testid="stExpandSidebarButton"],[data-testid="stSidebarCollapsedControl"],[data-testid="collapsedControl"]{
+  display:flex!important;visibility:visible!important;opacity:1!important;
+  position:fixed!important;top:.8rem!important;left:.8rem!important;z-index:1000002!important;
+  width:46px!important;height:46px!important;align-items:center;justify-content:center;
+  background:var(--lime)!important;border-radius:15px!important;box-shadow:0 8px 22px rgba(30,25,100,.28);
+  cursor:pointer;overflow:hidden;margin:0!important;padding:0!important;}
+[data-testid="stExpandSidebarButton"] *,[data-testid="stSidebarCollapsedControl"] *,[data-testid="collapsedControl"] *{opacity:0!important;}
+[data-testid="stExpandSidebarButton"] button,[data-testid="stSidebarCollapsedControl"] button,[data-testid="collapsedControl"] button{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;cursor:pointer;}
+[data-testid="stExpandSidebarButton"]::before,[data-testid="stSidebarCollapsedControl"]::before,[data-testid="collapsedControl"]::before{
+  content:"";position:absolute;width:20px;height:15px;pointer-events:none;
+  background:linear-gradient(#12142B,#12142B) 0 0/100% 3px no-repeat,linear-gradient(#12142B,#12142B) 0 50%/100% 3px no-repeat,linear-gradient(#12142B,#12142B) 0 100%/100% 3px no-repeat;}
+/* con la barra cerrada, el contenido baja un poco para no quedar debajo del botón */
+.stApp:has([data-testid="stSidebar"][aria-expanded="false"]) .block-container,
+.stApp:has([data-testid="stSidebar"][aria-expanded="false"]) [data-testid="stMainBlockContainer"]{padding-top:3.6rem!important;}
+/* botón para cerrarla, dentro de la barra lateral: siempre visible */
+[data-testid="stSidebarCollapseButton"],[data-testid="stSidebarCollapseButton"] button{opacity:1!important;visibility:visible!important;color:#C3C6E6!important;}
+</style>
+"""
+st.markdown(CSS5, unsafe_allow_html=True)
+
 
 def esc(t):
     return str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -739,7 +768,7 @@ DET = {
         "Alta precisión en sus alertas.", "Deja pasar cerca de 4 de cada 10 retrasos."),
     "adaboost_arbol_FINAL": ("Modelo final", "AdaBoost + Árbol", "Da más peso a los casos difíciles.",
         "Entrena árboles uno tras otro; cada nuevo árbol presta más atención a los pedidos que los anteriores clasificaron mal.",
-        "Detecta más retrasos reales (recall de 68 %).", "Sobreajusta: memoriza parte del entrenamiento (se midió con validación cruzada y prueba)."),
+        "Detecta más retrasos reales (recall de 68 %).", "Más falsas alertas: de cada 10 alertas, 7 son reales."),
 }
 
 
@@ -966,23 +995,19 @@ elif pagina == "Métricas":
             mostrar(fig)
 
     sec("Sobre el modelo final", "")
-    c3, c4 = st.columns([1.15, 1], gap="large")
-    with c3:
-        with st.container(key="card_m3"):
-            H(titulo_card("Qué datos influyen más", "Importancia de cada dato en la decisión de AdaBoost."))
-            imp = [
-                ("Beneficio por pedido", 0.118460), ("Pago por transferencia", 0.072075), ("Descuento (monto)", 0.070539),
-                ("Envío First Class", 0.068366), ("Ratio de beneficio", 0.056160), ("Mes del pedido", 0.050799),
-            ]
-            H(barras(imp, destacado="Beneficio por pedido", fmt="{:.1%}"))
-    with c4:
-        with st.container(key="dark_m4"):
-            H(
-                titulo_card("Una advertencia honesta", "ROC-AUC de AdaBoost: memoriza parte del entrenamiento.", True)
-                + barras([("Entrenamiento", 0.9619), ("Validación cruzada", 0.7400), ("Prueba", 0.7416)], destacado="Entrenamiento", fmt="{:.2f}", escala=(0.5, 1.0), oscuro=True)
-                +                 '<div class="tip dk"><b>Por eso se evaluó con pedidos nuevos.</b> La validación cruzada (0.7400) y la prueba (0.7416) coinciden, '
-                "así que las cifras son confiables.</div>"
-            )
+    with st.container(key="card_m3"):
+        imp = [
+            ("Beneficio por pedido", 0.118460), ("Pago por transferencia", 0.072075), ("Descuento (monto)", 0.070539),
+            ("Envío First Class", 0.068366), ("Ratio de beneficio", 0.056160), ("Mes del pedido", 0.050799),
+        ]
+        tope = max(v for _, v in imp)
+        H(
+            titulo_card("Qué datos influyen más", "Importancia de cada dato en la decisión de AdaBoost.")
+            + '<div class="bar-grid">'
+            + barras(imp[:3], destacado="Beneficio por pedido", fmt="{:.1%}", escala=(0, tope))
+            + barras(imp[3:], destacado="Beneficio por pedido", fmt="{:.1%}", escala=(0, tope))
+            + "</div>"
+        )
 
 # ================================================================== PREDICCIÓN
 else:
@@ -1016,8 +1041,10 @@ else:
                 H('<div class="grp">Envío</div>')
                 a1, a2, a3 = st.columns(3)
                 modo = a1.selectbox("Modo de envío", list(DIAS), index=3, key="p_modo")
-                fecha = a2.date_input("Fecha del pedido", value=pd.Timestamp("2016-06-15").date(), min_value=pd.Timestamp("2015-01-01").date(), max_value=pd.Timestamp("2018-12-31").date(), key="p_fecha")
+                fecha = a2.date_input("Fecha del pedido", value=pd.Timestamp.today().date(), min_value=pd.Timestamp("2015-01-01").date(), max_value=(pd.Timestamp.today() + pd.Timedelta(days=365)).date(), key="p_fecha")
                 tipo = a3.selectbox("Tipo de pago", cat["Type"], key="p_tipo")
+                if fecha.year > int(rg["order_year"]["max"]):
+                    st.caption("El modelo aprendió de pedidos de 2015 a 2018. Para fechas posteriores usa el año 2018 y conserva el mes y el día de la semana.")
                 H('<div class="grp" style="margin-top:.8rem">Cliente y destino</div>')
                 c1, c2, c3 = st.columns(3)
                 mercado = c1.selectbox("Mercado", cat["Market"], key="p_mercado")
@@ -1049,7 +1076,7 @@ else:
             "Order Item Profit Ratio": float(ratio), "Order Item Quantity": int(cant),
             "Order Profit Per Order": float(ben), "Order Region": region,
             "Product Price": float(precio), "Shipping Mode": modo,
-            "order_year": int(f.year), "order_month": int(f.month), "order_dayofweek": int(f.dayofweek),
+            "order_year": int(min(max(f.year, rg["order_year"]["min"]), rg["order_year"]["max"])), "order_month": int(f.month), "order_dayofweek": int(f.dayofweek),
         }
         p = float(modelo.predict_proba(preparar(fila))[0, 1])
         riesgo = p >= umbral

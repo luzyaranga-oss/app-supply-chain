@@ -195,28 +195,83 @@ LOGO = svg_uri(
 
 HERO = svg_uri(
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" width="600" height="440">'
-    '<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8F82FF"/><stop offset="1" stop-color="#5546D6"/></linearGradient></defs>'
-    '<circle cx="450" cy="150" r="160" fill="#6C5CE7" opacity=".28"/>'
-    '<circle cx="110" cy="340" r="110" fill="#CBF27A" opacity=".10"/>'
-    '<path d="M40 372 C140 300 160 420 250 350 S470 250 560 96" fill="none" stroke="#CBF27A" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14"/>'
-    '<circle cx="40" cy="372" r="11" fill="#fff" stroke="#CBF27A" stroke-width="4"/>'
-    '<circle cx="560" cy="96" r="11" fill="#fff" stroke="#CBF27A" stroke-width="4"/>'
-    '<polygon points="250,236 300,261 250,286 200,261" fill="#B9B0FF"/>'
-    '<polygon points="200,261 250,286 250,342 200,317" fill="url(#a)"/>'
-    '<polygon points="250,286 300,261 300,317 250,342" fill="#4234B8"/>'
-    '<polygon points="236,243 266,258 266,274 236,259" fill="#CBF27A" opacity=".95"/>'
-    '<rect x="40" y="36" width="240" height="124" rx="24" fill="#fff"/>'
-    '<circle cx="100" cy="98" r="34" fill="none" stroke="#EEEBFF" stroke-width="10"/>'
-    '<circle cx="100" cy="98" r="34" fill="none" stroke="#1FA97F" stroke-width="10" stroke-linecap="round" stroke-dasharray="58 214" transform="rotate(-90 100 98)"/>'
-    '<text x="100" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="800" fill="#12142B">27 %</text>'
-    '<text x="150" y="90" font-family="Arial, sans-serif" font-size="12" fill="#6A6E8E">Riesgo de retraso</text>'
-    '<text x="150" y="114" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#12142B">Entrega a tiempo</text>'
-    '<rect x="350" y="316" width="220" height="92" rx="22" fill="#1C1F42" stroke="#3A3F8F" stroke-width="2"/>'
-    '<rect x="370" y="336" width="84" height="26" rx="13" fill="#CBF27A"/>'
-    '<text x="412" y="353" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#12142B">RIESGO</text>'
-    '<text x="370" y="388" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Pedido priorizado</text>'
-    '<circle cx="470" cy="46" r="5" fill="#CBF27A"/><circle cx="500" cy="70" r="3" fill="#fff" opacity=".6"/><circle cx="430" cy="82" r="3" fill="#fff" opacity=".5"/>'
-    "</svg>"
+    '<defs>'
+    '<linearGradient id="a" x1="0" y1="0" x2="1" y2="1">'
+    '<stop offset="0" stop-color="#8F82FF"/>'
+    '<stop offset="1" stop-color="#5546D6"/>'
+    '</linearGradient>'
+    '</defs>'
+    '<circle cx="300" cy="215" r="178" fill="#6C5CE7" opacity=".26"/>'
+    '<circle cx="300" cy="215" r="124" fill="#8F82FF" opacity=".14"/>'
+    '<g fill="none" stroke="#CBF27A" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 11" opacity=".9">'
+    '<path d="M140 112 Q205 130 238 168"/>'
+    '<path d="M460 112 Q395 130 362 168"/>'
+    '<path d="M140 320 Q205 300 238 262"/>'
+    '<path d="M460 320 Q395 300 362 262"/>'
+    '</g>'
+    '<circle cx="105" cy="95" r="42" fill="#EEEBFF"/>'
+    '<circle cx="495" cy="95" r="42" fill="#EEEBFF"/>'
+    '<circle cx="105" cy="335" r="42" fill="#EEEBFF"/>'
+    '<circle cx="495" cy="335" r="42" fill="#EEEBFF"/>'
+    '<g transform="translate(105 97)">'
+    '<path d="M-24 -8 L-17 -28 H17 L24 -8 Z" fill="#6C5CE7"/>'
+    '<path d="M-8 -28 L-10 -8 M8 -28 L10 -8" stroke="#EEEBFF" stroke-width="3"/>'
+    '<rect x="-19" y="-8" width="38" height="30" rx="3" fill="#fff" stroke="#12142B" stroke-width="3"/>'
+    '<rect x="-6" y="3" width="12" height="19" rx="2" fill="#6C5CE7"/>'
+    '</g>'
+    '<g transform="translate(495 95)">'
+    '<path d="M-26 -22 H-15 L-8 8 H17 L24 -12 H-13" fill="#6C5CE7" fill-opacity=".25" stroke="#12142B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>'
+    '<circle cx="-3" cy="18" r="4.5" fill="#12142B"/>'
+    '<circle cx="15" cy="18" r="4.5" fill="#12142B"/>'
+    '<path d="M-10 -4 H18" stroke="#6C5CE7" stroke-width="4" stroke-linecap="round"/>'
+    '</g>'
+    '<g transform="translate(105 335)">'
+    '<rect x="-15" y="-28" width="30" height="56" rx="8" fill="#fff" stroke="#12142B" stroke-width="4"/>'
+    '<rect x="-9" y="-19" width="18" height="32" rx="3" fill="#6C5CE7"/>'
+    '<rect x="-6" y="-14" width="12" height="5" rx="2.5" fill="#CBF27A"/>'
+    '<circle cx="0" cy="20" r="2.5" fill="#12142B"/>'
+    '</g>'
+    '<g transform="translate(495 338)">'
+    '<path d="M-30 -4 L0 -27 L30 -4 Z" fill="#6C5CE7"/>'
+    '<rect x="-23" y="-5" width="46" height="31" rx="3" fill="#fff" stroke="#12142B" stroke-width="3"/>'
+    '<rect x="-15" y="6" width="13" height="13" fill="#CBF27A" stroke="#12142B" stroke-width="2.5"/>'
+    '<rect x="2" y="6" width="13" height="13" fill="#EEEBFF" stroke="#12142B" stroke-width="2.5"/>'
+    '</g>'
+    '<ellipse cx="308" cy="296" rx="120" ry="9" fill="#000" opacity=".25"/>'
+    '<rect x="205" y="160" width="132" height="94" rx="11" fill="url(#a)"/>'
+    '<rect x="205" y="236" width="132" height="10" fill="#4234B8" opacity=".55"/>'
+    '<rect x="225" y="184" width="62" height="15" rx="7.5" fill="#CBF27A"/>'
+    '<rect x="225" y="208" width="42" height="7" rx="3.5" fill="#fff" opacity=".55"/>'
+    '<path d="M337 176 H373 Q387 176 395 188 L411 214 Q415 222 415 232 V254 H337 Z" fill="#EEEBFF"/>'
+    '<path d="M347 186 H372 Q379 186 384 194 L394 212 H347 Z" fill="#6C5CE7" opacity=".65"/>'
+    '<rect x="406" y="234" width="9" height="11" rx="3" fill="#CBF27A"/>'
+    '<rect x="205" y="252" width="210" height="10" rx="5" fill="#3A3F8F"/>'
+    '<circle cx="252" cy="270" r="21" fill="#1C1F42" stroke="#CBF27A" stroke-width="4"/>'
+    '<circle cx="252" cy="270" r="7" fill="#EEEBFF"/>'
+    '<circle cx="372" cy="270" r="21" fill="#1C1F42" stroke="#CBF27A" stroke-width="4"/>'
+    '<circle cx="372" cy="270" r="7" fill="#EEEBFF"/>'
+    '<g transform="translate(300 112) scale(1.0)">'
+    '<path d="M0 0 C-10 -14 -15 -21 -15 -29 a15 15 0 1 1 30 0 C15 -21 10 -14 0 0Z" fill="#CBF27A"/>'
+    '<circle cx="0" cy="-29" r="5.5" fill="#12142B"/>'
+    '</g>'
+    '<g transform="translate(168 236) scale(0.7)">'
+    '<path d="M0 0 C-10 -14 -15 -21 -15 -29 a15 15 0 1 1 30 0 C15 -21 10 -14 0 0Z" fill="#B9B0FF"/>'
+    '<circle cx="0" cy="-29" r="5.5" fill="#12142B"/>'
+    '</g>'
+    '<g transform="translate(446 240) scale(0.72)">'
+    '<path d="M0 0 C-10 -14 -15 -21 -15 -29 a15 15 0 1 1 30 0 C15 -21 10 -14 0 0Z" fill="#CBF27A"/>'
+    '<circle cx="0" cy="-29" r="5.5" fill="#12142B"/>'
+    '</g>'
+    '<rect x="165" y="368" width="270" height="56" rx="20" fill="#fff"/>'
+    '<circle cx="205" cy="396" r="17" fill="none" stroke="#EEEBFF" stroke-width="7"/>'
+    '<circle cx="205" cy="396" r="17" fill="none" stroke="#1FA97F" stroke-width="7" stroke-linecap="round" stroke-dasharray="29 108" transform="rotate(-90 205 396)"/>'
+    '<text x="237" y="391" font-family="Arial, sans-serif" font-size="11" fill="#6A6E8E">Riesgo de retraso: 27 %</text>'
+    '<text x="237" y="410" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#12142B">Entrega a tiempo</text>'
+    '<circle cx="520" cy="190" r="5" fill="#CBF27A"/>'
+    '<circle cx="548" cy="232" r="3" fill="#fff" opacity=".6"/>'
+    '<circle cx="62" cy="210" r="3" fill="#fff" opacity=".5"/>'
+    '<circle cx="300" cy="22" r="4" fill="#CBF27A" opacity=".8"/>'
+    '</svg>'
 )
 
 
@@ -664,6 +719,16 @@ st.markdown(CSS4, unsafe_allow_html=True)
 
 CSS5 = """
 <style>
+.route{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.3rem;}
+.route::before{content:"";position:absolute;left:12.5%;right:12.5%;top:27px;border-top:4px dotted #B9B0FF;}
+.rstep{position:relative;text-align:center;}
+.rpin{position:relative;z-index:1;width:54px;height:54px;border-radius:50%;margin:0 auto .75rem;display:flex;align-items:center;justify-content:center;background:#EEEBFF;}
+.rpin svg{width:26px;height:26px;}
+.rstep.now .rpin{background:var(--lime);box-shadow:0 0 0 8px rgba(203,242,122,.4);}
+.rstep b{display:block;color:var(--ink);font-size:.95rem;font-weight:800;}
+.rstep span{display:block;color:var(--muted);font-size:.82rem;line-height:1.4;margin-top:.15rem;}
+.rstep.now span{color:var(--violet);font-weight:700;}
+@media (max-width:700px){.route{grid-template-columns:1fr 1fr;row-gap:1.4rem;}.route::before{display:none;}}
 .bar-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;}
 @media (max-width:820px){.bar-grid{grid-template-columns:1fr;}}
 
@@ -811,6 +876,18 @@ if pagina == "Inicio":
 <div class="hero-text">DataCo Global</div>
 </div><div><img src="{HERO}"/></div></div>"""
     )
+    st.write("")
+    with st.container(key="card_i1"):
+        IC = '<svg viewBox="0 0 24 24" fill="none" stroke="#12142B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+        H(
+            titulo_card("Dónde actúa el modelo", "Antes del despacho, cuando todavía se puede cambiar algo.")
+            + '<div class="route">'
+            f'<div class="rstep now"><div class="rpin">{IC}<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><b>Pedido creado</b><span>Aquí se predice el riesgo</span></div>'
+            f'<div class="rstep"><div class="rpin">{IC}<path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg></div><b>Despacho</b><span>Se prioriza o se cambia el envío</span></div>'
+            f'<div class="rstep"><div class="rpin">{IC}<path d="M2 6h11v10H2zM13 9h5l3 3v4h-8"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div><b>En camino</b><span>El cliente espera su pedido</span></div>'
+            f'<div class="rstep"><div class="rpin">{IC}<path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><path d="M9 10l2 2 4-4"/></svg></div><b>Entrega</b><span>A tiempo o con retraso</span></div>'
+            "</div>"
+        )
 
 # ================================================================== EL PROBLEMA
 elif pagina == "El problema":
